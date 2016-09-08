@@ -3,22 +3,13 @@ module.exports = function (grunt) {
     // Project configuration.
     grunt.initConfig({
         pkg: grunt.file.readJSON('package.json'),
-        jasmine: {
-            pivotal: {
-                src: 'js/compiled/*.js',
-                options: {
-                    specs: 'js/spec/*Spec.js',
-                    helpers: 'js/spec/*Helper.js'
-                }
-            }
-        },
         sass: {
             options: {
                 sourcemap: 'none'
             },
             dist: {
                 files: {
-                    'css/base-sass.css': 'css/sass/base-sass.scss'
+                    'css/tna-child-sass.css': 'css/sass/tna-child-sass.scss'
                 }
             }
         },
@@ -28,7 +19,7 @@ module.exports = function (grunt) {
             },
             target: {
                 files: {
-                    'css/base-sass.css.min': ['css/base-sass.css']
+                    'css/tna-child-sass.css.min': ['css/tna-child-sass.css']
                 }
             }
         },
@@ -41,18 +32,54 @@ module.exports = function (grunt) {
                 files: 'css/sass/*.scss',
                 tasks: ['sass', 'cssmin']
             }
+        },
+        qunit: {
+            all: ['js/tests/**/*.html']
+        },
+        concat: {
+            options: {
+                separator: ';'
+            },
+            dist: {
+                src: ['js/mitigate-target-blank.js', 'js/run-on-page-load.js'],
+                dest: 'js/compiled/tna-base.js'
+            }
+        },
+        uglify: {
+            options: {
+                mangle: false
+            },
+            my_target: {
+                files: {
+                    'js/compiled/tna-child-base.min.js': ['js/compiled/tna-child-base.js']
+                }
+            }
+        },
+        browserSync: {
+            dev: {
+                bsFiles: {
+                    src: [
+                        'css/*.css'
+                    ]
+                },
+                options: {
+                    watchTask: true,
+                    proxy: 'tna-website-dev:8888'
+                }
+            }
         }
     });
 
     grunt.loadNpmTasks('grunt-contrib-sass');
     grunt.loadNpmTasks('grunt-contrib-watch');
+    grunt.loadNpmTasks('grunt-browser-sync');
     grunt.loadNpmTasks('grunt-contrib-cssmin');
+    grunt.loadNpmTasks('grunt-contrib-qunit');
+    grunt.loadNpmTasks('grunt-contrib-concat');
+    grunt.loadNpmTasks('grunt-contrib-uglify');
 
-    // Load the plugins that provide the tasks.
-    grunt.loadNpmTasks('grunt-contrib-jasmine');
-
-    //Default tasks
-    grunt.registerTask('default', ['sass', 'cssmin', 'watch']);
-
+    // Default task(s).
+    grunt.registerTask('default', ['sass', 'cssmin', 'qunit', 'concat', 'uglify', 'watch']);
+    grunt.registerTask('bSync', ['browserSync', 'watch']);
 
 };
