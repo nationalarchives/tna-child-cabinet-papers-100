@@ -57,5 +57,30 @@ h1 {
   margin: .5em;
   text-align: center; }
 
-.col-md-6 {
-  padding: 0; }
+.cabinet-documents {
+  height: auto; }
+  .cabinet-documents .thumbnail {
+    padding: 0;
+    background-color: transparent;
+    border: none;
+    margin-bottom: 0; }
+  .cabinet-documents .caption {
+    position: absolute;
+    bottom: 0;
+    padding: .5em;
+    background: rgba(0, 0, 0, 0.8);
+    box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    -webkit-box-sizing: border-box; }
+    .cabinet-documents .caption h2 {
+      margin-top: 5px; }
+    .cabinet-documents .caption p {
+      margin-bottom: .5em; }
+
+.cabinet-documents:nth-of-type(odd) {
+  padding-left: 0;
+  padding-right: 1px; }
+
+.cabinet-documents:nth-of-type(even) {
+  padding-left: 1px;
+  padding-right: 0; }
