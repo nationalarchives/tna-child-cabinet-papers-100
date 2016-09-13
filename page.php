@@ -16,10 +16,6 @@
 					<div class="row">
 						<div class="col-md-12">
 							<h1><span><?php echo get_the_title(); ?></span></h1>
-							<?php $sub_heading = get_post_meta($page_id, 'sub_heading_sub_heading', true);
-							if ($sub_heading) : ?>
-								<h2 class="super-heading"><?php echo $sub_heading; ?></h2>
-							<?php endif; ?>
 						</div>
 					</div>
 				</div>
@@ -30,24 +26,74 @@
 				<?php endwhile; endif; ?>
 			</section>
 			<section class="container">
+				<div class="col-md-6 cabinet-documents">
+					<div class="caption">
+						<a href="#">
+							<h2>Thumbnail label</h2>
+						</a>
+						<p>
+							Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s
+						</p>
+					</div>
+					<div class="thumbnail">
+						<a href="#"><img src="http://www.nationalarchives.gov.uk/wp-content/uploads/2015/10/feature-agincourt-Henry-V-seal-720x553.jpg" alt="Why the battle of Agincourt happened"></a>
+					</div>
+				</div>
+				<div class="col-md-6 cabinet-documents">
+					<div class="caption">
+						<a href="#">
+							<h2>Thumbnail label</h2>
+						</a>
+						<p>
+							Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s
+						</p>
+					</div>
+					<div class="thumbnail">
+						<a href="#"><img src="http://www.nationalarchives.gov.uk/wp-content/uploads/2015/10/Feature-pouch-of-Sir-Simon-Felbrigge-720x553.jpg" alt="Preparing to fight: Raising soldiers and supplies"></a>
+					</div>
+				</div>
+				<div class="col-md-6 cabinet-documents">
+					<div class="caption">
+						<a href="#">
+							<h2>Thumbnail label</h2>
+						</a>
+						<p>
+							Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s
+						</p>
+					</div>
+					<div class="thumbnail">
+						<a href="#"><img src="http://www.nationalarchives.gov.uk/wp-content/uploads/2015/10/feature-agincourt-Henry-V-seal-720x553.jpg" alt="Why the battle of Agincourt happened"></a>
+					</div>
+				</div>
+				<div class="col-md-6 cabinet-documents">
+					<div class="caption">
+						<a href="#">
+							<h2>Thumbnail label</h2>
+						</a>
+						<p>
+							Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s
+						</p>
+					</div>
+					<div class="thumbnail">
+						<a href="#"><img src="http://www.nationalarchives.gov.uk/wp-content/uploads/2015/10/feature-agincourt-Henry-V-seal-720x553.jpg" alt="Why the battle of Agincourt happened"></a>
+					</div>
+				</div>
+			</section>
+			<section class="container boxes">
 				<div class="col-md-6">
 					<div class="thumbnail">
-						<img src="..." alt="...">
-						<div class="caption">
-							<h3>Thumbnail label</h3>
-							<p>...</p>
-							<p><a href="#" class="btn btn-primary" role="button">Button</a> <a href="#" class="btn btn-default" role="button">Button</a></p>
-						</div>
+						<h2>Bookshop</h2>
+						<p>
+							is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in
+						</p>
 					</div>
 				</div>
 				<div class="col-md-6">
 					<div class="thumbnail">
-						<img src="..." alt="...">
-						<div class="caption">
-							<h3>Thumbnail label</h3>
-							<p>...</p>
-							<p><a href="#" class="btn btn-primary" role="button">Button</a> <a href="#" class="btn btn-default" role="button">Button</a></p>
-						</div>
+						<h2>Related links</h2>
+						<p>
+							is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in
+						</p>
 					</div>
 				</div>
 			</section>
