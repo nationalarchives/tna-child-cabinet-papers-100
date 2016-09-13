@@ -83,17 +83,30 @@
 				<div class="col-md-6">
 					<div class="thumbnail">
 						<h2>Bookshop</h2>
+						<div class="img-box">
+							<div class="col-md-4">
+								<a href="#"><img src="http://images.nitrosell.com/product_images/15/3652/9781843835110.jpg" alt="" border="0"></a>
+							</div>
+							<div class="col-md-4">
+								<a href="#"><img src="http://images.nitrosell.com/product_images/15/3652/9781444792119.jpg" alt="" border="0"></a>
+							</div>
+							<div class="col-md-4">
+								<a href="#"><img src="http://images.nitrosell.com/product_images/15/3652/9781845950972.jpg" alt="" border="0"></a>
+							</div>
+						</div>
 						<p>
-							is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in
+							Discover more books about Agincourt in The National Archives' bookshop.
 						</p>
 					</div>
 				</div>
 				<div class="col-md-6">
 					<div class="thumbnail">
 						<h2>Related links</h2>
-						<p>
-							is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in
-						</p>
+						<ul>
+							<li><a href="http://www.agincourt600.com/" title="Agincourt600 website">Agincourt600</a></li>
+							<li><a href="http://www.medievalsoldier.org/" title="The soldier in later Medieval England">The soldier in later Medieval England</a></li>
+							<li><a href="http://www.nationalarchives.gov.uk/help-with-your-research/research-guides/medieval-early-modern-soldiers/" title="Research guide: Medieval and early modern soldiers">Research guide: Medieval and early modern soldiers</a></li>
+						</ul>
 					</div>
 				</div>
 			</section>

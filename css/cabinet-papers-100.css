@@ -105,6 +105,10 @@ section.boxes {
       border: none;
       border-radius: 0;
       padding: 1.5em; }
+      section.boxes .col-md-6 .thumbnail h2 {
+        margin-bottom: 2em; }
+      section.boxes .col-md-6 .thumbnail .img-box .col-md-4 {
+        margin-bottom: 2em; }
 
 footer {
   margin-top: 1.5em; }

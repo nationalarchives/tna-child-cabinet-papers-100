@@ -128,6 +128,14 @@ section.boxes {
   .col-md-6 {
     padding: 0;
     .thumbnail {
+      h2 {
+        margin-bottom: 2em;
+      }
+      .img-box {
+        .col-md-4 {
+          margin-bottom: 2em;
+        }
+      }
       border: none;
       border-radius: 0;
       padding: 1.5em;
