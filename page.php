@@ -16,10 +16,6 @@
 					<div class="row">
 						<div class="col-md-12">
 							<h1><span><?php echo get_the_title(); ?></span></h1>
-							<?php $sub_heading = get_post_meta($page_id, 'sub_heading_sub_heading', true);
-							if ($sub_heading) : ?>
-								<h2 class="super-heading"><?php echo $sub_heading; ?></h2>
-							<?php endif; ?>
 						</div>
 					</div>
 				</div>
@@ -30,23 +26,25 @@
 				<?php endwhile; endif; ?>
 			</section>
 			<section class="container">
-				<div class="col-md-6">
+				<div class="col-md-6 cabinet-documents">
 					<div class="thumbnail">
-						<img src="..." alt="...">
+						<img src="http://www.nationalarchives.gov.uk/wp-content/uploads/2015/10/feature-agincourt-Henry-V-seal-720x553.jpg" alt="Why the battle of Agincourt happened">
 						<div class="caption">
 							<h3>Thumbnail label</h3>
-							<p>...</p>
-							<p><a href="#" class="btn btn-primary" role="button">Button</a> <a href="#" class="btn btn-default" role="button">Button</a></p>
+							<p>
+								Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s
+							</p>
 						</div>
 					</div>
 				</div>
-				<div class="col-md-6">
+				<div class="col-md-6 cabinet-documents">
 					<div class="thumbnail">
-						<img src="..." alt="...">
+						<img src="http://www.nationalarchives.gov.uk/wp-content/uploads/2015/10/Feature-pouch-of-Sir-Simon-Felbrigge-720x553.jpg" alt="Preparing to fight: Raising soldiers and supplies">
 						<div class="caption">
 							<h3>Thumbnail label</h3>
-							<p>...</p>
-							<p><a href="#" class="btn btn-primary" role="button">Button</a> <a href="#" class="btn btn-default" role="button">Button</a></p>
+							<p>
+								Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s
+							</p>
 						</div>
 					</div>
 				</div>
