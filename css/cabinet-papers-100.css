@@ -1,12 +1,12 @@
 h1 {
   font-size: 3em;
   line-height: 1em;
-  color: #fff; }
+  color: #fff;
+  margin-bottom: 1em; }
   h1 span {
     line-height: 1.5em;
     background-color: #008484;
     padding: 0 .4em;
-    margin-left: 3px;
     box-sizing: border-box; }
 
 .tna-breadcrumb {
@@ -63,8 +63,10 @@ h1 {
     padding: 0;
     background-color: transparent;
     border: none;
-    margin-bottom: 0; }
+    margin-bottom: 0;
+    margin-top: 1em; }
   .cabinet-documents .caption {
+    color: #fff;
     position: absolute;
     bottom: 0;
     padding: .5em;
@@ -72,15 +74,22 @@ h1 {
     box-sizing: border-box;
     -moz-box-sizing: border-box;
     -webkit-box-sizing: border-box; }
-    .cabinet-documents .caption h2 {
-      margin-top: 5px; }
+    .cabinet-documents .caption a:hover {
+      color: #0084b4; }
+    .cabinet-documents .caption a h2 {
+      margin-top: 5px;
+      color: #0084b4;
+      width: auto; }
     .cabinet-documents .caption p {
       margin-bottom: .5em; }
 
 .cabinet-documents:nth-of-type(odd) {
   padding-left: 0;
-  padding-right: 1px; }
+  padding-right: 4px; }
 
 .cabinet-documents:nth-of-type(even) {
-  padding-left: 1px;
+  padding-left: 4px;
   padding-right: 0; }
+
+footer {
+  margin-top: 1.5em; }

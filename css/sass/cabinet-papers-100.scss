@@ -2,11 +2,11 @@ h1 {
   font-size: 3em;
   line-height: 1em;
   color: #fff;
+  margin-bottom: 1em;
   span {
     line-height: 1.5em;
     background-color: #008484;
     padding: 0 .4em;
-    margin-left: 3px;
     box-sizing: border-box;
   }
 }
@@ -78,8 +78,10 @@ h1 {
     background-color: transparent;
     border: none;
     margin-bottom: 0;
+    margin-top: 1em;
   }
   .caption {
+    color: #fff;
     position: absolute;
     bottom: 0;
     padding: .5em;
@@ -87,8 +89,15 @@ h1 {
     box-sizing: border-box;
     -moz-box-sizing: border-box;
     -webkit-box-sizing: border-box;
-    h2 {
-      margin-top: 5px;
+    a:hover {
+      color: #0084b4;
+    }
+    a {
+      h2 {
+        margin-top: 5px;
+        color: #0084b4;
+        width: auto;
+      }
     }
     p {
       margin-bottom: .5em;
@@ -98,10 +107,14 @@ h1 {
 
 .cabinet-documents:nth-of-type(odd) {
   padding-left: 0;
-  padding-right: 1px;
+  padding-right: 4px;
 }
 
 .cabinet-documents:nth-of-type(even) {
-  padding-left: 1px;
+  padding-left: 4px;
   padding-right: 0;
+}
+
+footer {
+  margin-top: 1.5em;
 }
