@@ -91,5 +91,20 @@ h1 {
   padding-left: 4px;
   padding-right: 0; }
 
+section.boxes {
+  margin-top: 2.5em; }
+  section.boxes .col-md-6:nth-of-type(even) {
+    padding-left: 4px;
+    padding-right: 0; }
+  section.boxes .col-md-6:nth-of-type(odd) {
+    padding-left: 0;
+    padding-right: 4px; }
+  section.boxes .col-md-6 {
+    padding: 0; }
+    section.boxes .col-md-6 .thumbnail {
+      border: none;
+      border-radius: 0;
+      padding: 1.5em; }
+
 footer {
   margin-top: 1.5em; }
