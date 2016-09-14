@@ -65,6 +65,10 @@ section.explore-records {
   position: relative;
   top: 80px; }
 
+.bxslider {
+  width: 635px;
+  height: 205px; }
+
 .document-slide-thumb {
   width: 200px;
   height: 200px;
@@ -76,5 +80,13 @@ section.explore-records {
   background-position: center;
   background-size: cover;
   background-repeat: no-repeat;
-  margin-left: 10px;
+  margin-left: 0px;
   margin-bottom: 10px; }
+
+.bx-wrapper {
+  position: relative;
+  margin: 0 auto 60px;
+  padding: 0; }
+
+.bxslider p {
+  text-align: center; }

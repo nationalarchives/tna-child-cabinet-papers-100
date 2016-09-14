@@ -25,17 +25,29 @@ get_template_part( 'breadcrumb' ); ?>
 		<h2>Explore the records</h2>
 		<span id="slider-prev"></span>
 		<span id="slider-next"></span>
-		<div class="bxslider">
-			<a href="">
-				<div class="document-slide-thumb" style="background-image: url(http://livelb.nationalarchives.gov.uk/wp-content/uploads/2015/10/agincourt-charles-vi-great-seal-400x180.jpg)">
-				<p>Great Seal of Charles VI (front side)</p>
-				</div>
-			</a>
-			<a href="">Item 2</a>
-			<a href="">Item 3</a>
-			<a href="">Item 4</a>
-			<a href="">Item 5</a>
-		</div>
+
+			<div class="bxslider">
+				<a href="">
+					<div class="document-slide-thumb" style="background-image: url(http://livelb.nationalarchives.gov.uk/wp-content/uploads/2015/10/agincourt-charles-vi-great-seal-400x180.jpg)"></div>
+					<div><p>Great Seal of Charles VI (front side)</p></div>
+				</a>
+				<a href="">
+					<div class="document-slide-thumb" style="background-image: url(http://livelb.nationalarchives.gov.uk/wp-content/uploads/2015/10/Parliamentary-rolls-400x180.jpg)"></div>
+					<div><p>Parliamentary rolls</p></div>
+				</a>
+				<a href="">
+					<div class="document-slide-thumb" style="background-image: url(http://livelb.nationalarchives.gov.uk/wp-content/uploads/2015/10/agincourt-Henry-V-seal-400x180.jpg)"></div>
+					<div><p>‘Golden’ Seal of Henry V (reverse side)</p></div>
+				</a>
+				<a href="">
+					<div class="document-slide-thumb" style="background-image: url(http://livelb.nationalarchives.gov.uk/wp-content/uploads/2015/10/agincourt-Henry-V-seal-front-400x180.jpg)"></div>
+					<div><p>‘Golden’ Seal of Henry V (front side)</p></div>
+				</a>
+				<a href="">
+					<div class="document-slide-thumb" style="background-image: url(http://livelb.nationalarchives.gov.uk/wp-content/uploads/2015/10/Sick-rolls-of-invalided-soldiers-400x180.jpg)"></div>
+					<div><p>Sick roll</p></div>
+				</a>
+			</div>
 	</section>
 	<section class="container">
 		<a class="button align-right" href="#">Return to the Battle of Agincourt</a>
