@@ -9,7 +9,8 @@ module.exports = function (grunt) {
             },
             dist: {
                 files: {
-                    'css/cabinet-papers-100.css': 'css/sass/cabinet-papers-100.scss'
+                    'css/cabinet-papers-100.css': 'css/sass/cabinet-papers-100.scss',
+                    'css/documents.css': 'css/sass/documents.scss'
                 }
             }
         },
@@ -19,7 +20,8 @@ module.exports = function (grunt) {
             },
             target: {
                 files: {
-                    'css/cabinet-papers-100.css.min': ['css/cabinet-papers-100.css']
+                    'css/cabinet-papers-100.css.min': ['css/cabinet-papers-100.css'],
+                    'css/documents.css.min': ['css/documents.css']
                 }
             }
         },
