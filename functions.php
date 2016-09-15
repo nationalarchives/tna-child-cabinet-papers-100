@@ -39,3 +39,5 @@ function tna_child_styles()
 }
 
 add_action('wp_enqueue_scripts', 'tna_child_styles');
+
+apply_filters('the_content',get_the_content());

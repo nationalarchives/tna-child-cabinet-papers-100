@@ -49,7 +49,14 @@
 								<a href="<?php echo get_page_link($page->ID); ?>" title="<?php echo get_the_title(); ?>">
 									<h2><?php echo get_the_title(); ?></h2>
 								</a>
-								<?php the_content(); ?>
+								<?php
+									if (has_excerpt()) {
+										the_excerpt();
+									}
+									else {
+										echo first_sentence(the_content());
+									}
+								?>
 							</div>
 							<div class="thumbnail">
 								<?php
