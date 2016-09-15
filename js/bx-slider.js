@@ -9,7 +9,7 @@ jQuery(document).ready(function($) {
         preloadImages:'visible',
         controls:true,
         infiniteLoop:false,
-        hideControlOnEnd:false,
+        hideControlOnEnd:true,
         nextSelector: '#slider-next',
         prevSelector: '#slider-prev',
         nextText: '<i class="fa fa-chevron-right fa-4x"></i>',

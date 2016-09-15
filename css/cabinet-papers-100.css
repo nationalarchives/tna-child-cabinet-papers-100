@@ -110,5 +110,8 @@ section.boxes {
       section.boxes .col-md-6 .thumbnail .img-box .col-md-4 {
         margin-bottom: 2em; }
 
+.breather {
+  padding: 0; }
+
 footer {
   margin-top: 1.5em; }

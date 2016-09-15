@@ -26,58 +26,37 @@
 				<?php endwhile; endif; ?>
 			</section>
 			<section class="container">
+			<?php
+				$parent_id = get_the_ID();
+				$args = array(
+					'post_parent'   => $parent_id,
+					'post_type'     => 'page',
+					'post_per_page' => -1,
+					'orderby'       => 'menu_order',
+					'order'         => 'ASC'
+				);
+				$the_query = new WP_Query( $args );
+				if ( $the_query->have_posts() ) :
+					while ( $the_query->have_posts() ) : $the_query->the_post();
+			?>
 				<div class="col-md-6 cabinet-documents">
 					<div class="caption">
-						<a href="#">
-							<h2>Thumbnail label</h2>
+						<a href="<?php echo get_page_link($page->ID); ?>" title="<?php echo get_the_title(); ?>">
+							<h2><?php echo get_the_title(); ?></h2>
 						</a>
-						<p>
-							Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s
-						</p>
+						<?php the_content(); ?>
 					</div>
 					<div class="thumbnail">
-						<a href="#"><img src="http://www.nationalarchives.gov.uk/wp-content/uploads/2015/10/feature-agincourt-Henry-V-seal-720x553.jpg" alt="Why the battle of Agincourt happened"></a>
-					</div>
-				</div>
-				<div class="col-md-6 cabinet-documents">
-					<div class="caption">
-						<a href="#">
-							<h2>Thumbnail label</h2>
+						<?php
+						$thumb_id = get_post_thumbnail_id($page->ID);
+						$thumb_url = wp_get_attachment_image_src($thumb_id,'full', false);
+						?>
+						<a href="<?php echo get_page_link($page->ID); ?>" title="<?php echo get_the_title(); ?>">
+							<img src="<?php echo($thumb_url[0]); ?>" alt="<?php the_title(); ?>">
 						</a>
-						<p>
-							Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s
-						</p>
-					</div>
-					<div class="thumbnail">
-						<a href="#"><img src="http://www.nationalarchives.gov.uk/wp-content/uploads/2015/10/Feature-pouch-of-Sir-Simon-Felbrigge-720x553.jpg" alt="Preparing to fight: Raising soldiers and supplies"></a>
 					</div>
 				</div>
-				<div class="col-md-6 cabinet-documents">
-					<div class="caption">
-						<a href="#">
-							<h2>Thumbnail label</h2>
-						</a>
-						<p>
-							Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s
-						</p>
-					</div>
-					<div class="thumbnail">
-						<a href="#"><img src="http://www.nationalarchives.gov.uk/wp-content/uploads/2015/10/feature-agincourt-Henry-V-seal-720x553.jpg" alt="Why the battle of Agincourt happened"></a>
-					</div>
-				</div>
-				<div class="col-md-6 cabinet-documents">
-					<div class="caption">
-						<a href="#">
-							<h2>Thumbnail label</h2>
-						</a>
-						<p>
-							Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s
-						</p>
-					</div>
-					<div class="thumbnail">
-						<a href="#"><img src="http://www.nationalarchives.gov.uk/wp-content/uploads/2015/10/feature-agincourt-Henry-V-seal-720x553.jpg" alt="Why the battle of Agincourt happened"></a>
-					</div>
-				</div>
+				<?php endwhile; endif; ?>
 			</section>
 			<section class="container boxes">
 				<div class="col-md-6">

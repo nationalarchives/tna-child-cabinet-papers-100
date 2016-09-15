@@ -28,7 +28,7 @@ module.exports = function (grunt) {
         watch: {
             scripts: {
                 files: 'js/*.js',
-                tasks: ['qunit', 'concat', 'uglify']
+                tasks: ['qunit', 'concat']
             },
             css: {
                 files: 'css/sass/*.scss',
@@ -49,7 +49,6 @@ module.exports = function (grunt) {
     grunt.loadNpmTasks('grunt-contrib-sass');
     grunt.loadNpmTasks('grunt-contrib-watch');
     grunt.loadNpmTasks('grunt-contrib-cssmin');
-    grunt.loadNpmTasks('grunt-contrib-qunit');
     grunt.loadNpmTasks('grunt-contrib-concat');
 
     // Default task(s).
