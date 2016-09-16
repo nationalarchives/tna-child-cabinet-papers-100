@@ -4,7 +4,7 @@ jQuery(document).ready(function($) {
         maxSlides: 4,
         slideWidth: 200,
         slideMargin: 10,
-        pager: false,
+        pager: true,
         responsive:true,
         preloadImages:'visible',
         controls:true,

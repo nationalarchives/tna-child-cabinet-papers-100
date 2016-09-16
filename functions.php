@@ -40,4 +40,10 @@ function tna_child_styles()
 
 add_action('wp_enqueue_scripts', 'tna_child_styles');
 
-apply_filters('the_content',get_the_content());
+
+add_action( 'after_setup_theme', 'theme_setup' );
+function theme_setup() {
+	if ( function_exists( 'add_theme_support' ) ) {
+		add_image_size( 'custom-image', 605, 440, array('center','center') );
+	}
+}

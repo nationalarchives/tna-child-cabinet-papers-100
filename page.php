@@ -46,7 +46,7 @@
 					?>
 						<div class="col-md-6 cabinet-documents">
 							<div class="caption">
-								<a href="<?php echo get_page_link($page->ID); ?>" title="<?php echo get_the_title(); ?>">
+								<a href="<?php echo get_page_link(); ?>" title="<?php echo get_the_title(); ?>">
 									<h2><?php echo get_the_title(); ?></h2>
 								</a>
 								<?php
@@ -59,12 +59,8 @@
 								?>
 							</div>
 							<div class="thumbnail">
-								<?php
-								$thumb_id = get_post_thumbnail_id($page->ID);
-								$thumb_url = wp_get_attachment_image_src($thumb_id,'full', false);
-								?>
-								<a href="<?php echo get_page_link($page->ID); ?>" title="<?php echo get_the_title(); ?>">
-									<img src="<?php echo($thumb_url[0]); ?>" alt="<?php the_title(); ?>">
+								<a href="<?php echo get_page_link(); ?>" title="<?php echo get_the_title(); ?>">
+									<?php the_post_thumbnail( 'custom-image', array('class' => 'img-responsive')); // to add a class to the img tag ?>
 								</a>
 							</div>
 						</div>
