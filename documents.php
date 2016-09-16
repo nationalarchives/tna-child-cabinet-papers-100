@@ -34,8 +34,6 @@ get_template_part( 'breadcrumb' ); ?>
 	<?php
 		$page_id = $post->ID;
 		$image = wp_get_attachment_image_src(get_post_thumbnail_id($page_id), 'single-post-thumbnail');
-		$childimage = wp_get_attachment_image_src(get_post_thumbnail_id($post->ID), 'single-post-thumbnail');
-		//$childimage = wp_get_attachment_image_src(get_post_thumbnail_id($post->post_parent), 'single-post-thumbnail');
 		$args = array(
 			'post_parent'   => $page_id,
 			'post_type'     => 'page',
@@ -51,24 +49,24 @@ get_template_part( 'breadcrumb' ); ?>
 			<h2>Explore the records</h2>
 			<span id="slider-prev"></span>
 			<span id="slider-next"></span>
-				<div class="bxslider">
-					<?php while ( $the_query->have_posts() ) : $the_query->the_post(); ?>
-					<a href="<?php echo get_page_link(); ?>">
-						<div class="document-slide-thumb" style="background-image: url('<?php
-						$page_id = $post->ID;
-						$image = wp_get_attachment_image_src(get_post_thumbnail_id($page_id), 'single-post-thumbnail');
-						$childimage = wp_get_attachment_image_src(get_post_thumbnail_id($post->post_parent), 'single-post-thumbnail');
-						if (has_post_thumbnail($page_id)) {
-							echo make_path_relative_no_pre_path($image[0]);
-						} elseif (is_page($page_id)) {
-							echo make_path_relative_no_pre_path($childimage[0]);
-						}
-						?>')">
-						</div>
-						<div><p><?php the_title(); ?></p></div>
-					</a>
-					<?php endwhile; ?>
-				</div>
+			<div class="bxslider">
+				<?php while ( $the_query->have_posts() ) : $the_query->the_post(); ?>
+				<a href="<?php echo get_page_link(); ?>">
+					<div class="document-slide-thumb" style="background-image: url('<?php
+					$page_id = $post->ID;
+					$image = wp_get_attachment_image_src(get_post_thumbnail_id($page_id), 'single-post-thumbnail');
+					$childimage = wp_get_attachment_image_src(get_post_thumbnail_id($post->post_parent), 'single-post-thumbnail');
+					if (has_post_thumbnail($page_id)) {
+						echo make_path_relative_no_pre_path($image[0]);
+					} elseif (is_page($page_id)) {
+						echo make_path_relative_no_pre_path($childimage[0]);
+					}
+					?>')">
+					</div>
+					<div><p><?php the_title(); ?></p></div>
+				</a>
+				<?php endwhile; ?>
+			</div>
 		</div>
 	</section>
 	<?php endif; wp_reset_postdata(); ?>

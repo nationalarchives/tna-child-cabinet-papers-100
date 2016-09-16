@@ -48,19 +48,9 @@ section.explore-records {
   .overlay a:hover {
     color: black; }
 
-#slider-next, #slider-prev {
-  display: none;
-  position: relative;
-  top: 80px; }
-
 #slider-prev {
   float: left;
   left: 20px; }
-
-#slider-next, #slider-prev {
-  display: block;
-  position: relative;
-  top: 80px; }
 
 #slider-next {
   float: right;
@@ -94,5 +84,13 @@ section.explore-records {
   text-align: center; }
 
 @media only screen and (min-width: 769px) {
-  .bx-controls {
+  /* .bx-controls {
+     display: none;
+   }*/
+  #slider-next, #slider-prev {
+    display: block;
+    position: relative;
+    top: 80px; }
+
+  .disabled {
     display: none; } }
