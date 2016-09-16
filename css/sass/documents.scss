@@ -12,11 +12,14 @@ h1 {
 
 section.container {
   background-color: #fff;
-  padding: 20px !important;
+  padding: 20px 40px !important;
 }
 
 section.explore-records {
   background-color: $grey-background;
+  h2 {
+    margin-bottom: 60px;
+  }
 }
 
 .document-viewer {
