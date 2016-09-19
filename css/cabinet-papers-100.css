@@ -9,6 +9,9 @@ h1 {
     padding: 0 .4em;
     box-sizing: border-box; }
 
+button.eye_caption, .image_caption_back {
+  top: 0; }
+
 .tna-breadcrumb {
   margin-top: 0; }
   .tna-breadcrumb .container .row .col-md-12 {
