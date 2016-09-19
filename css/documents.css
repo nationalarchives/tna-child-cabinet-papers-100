@@ -74,6 +74,9 @@ section.explore-records {
   margin-left: 0px;
   margin-bottom: 10px; }
 
+.document-slide-thumb:hover {
+  border: 2px solid #0084B4; }
+
 .bx-wrapper {
   position: relative;
   margin: 0 auto 60px;
