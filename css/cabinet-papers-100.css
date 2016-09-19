@@ -12,6 +12,9 @@ h1 {
 button.eye_caption, .image_caption_back {
   top: 0; }
 
+.row div.col-md-6 div.thumbnail ul {
+  margin-left: .5em; }
+
 .tna-breadcrumb {
   margin-top: 0; }
   .tna-breadcrumb .container .row .col-md-12 {
