@@ -1,6 +1,6 @@
 <?php get_header(); ?>
 	<main>
-		<div class="banner" role="banner" style="background-image: url('<?php
+		<div class="banner" style="background-image: url('<?php
 		$page_id = $post->ID;
 		$image = wp_get_attachment_image_src(get_post_thumbnail_id($page_id), 'single-post-thumbnail');
 		$childimage = wp_get_attachment_image_src(get_post_thumbnail_id($post->post_parent), 'single-post-thumbnail');
@@ -54,7 +54,7 @@
 										the_excerpt();
 									}
 									else {
-										echo first_sentence(the_content());
+										echo first_sentence(get_the_content());
 									}
 								?>
 							</div>
@@ -73,15 +73,15 @@
 						<div class="thumbnail">
 							<h2>Bookshop</h2>
 							<div class="img-box">
-								<div class="col-md-4">
+								<div class="col-md-4 col-xs-4">
 									<a href="#">
-										<img src="http://images.nitrosell.com/product_images/15/3652/9781843835110.jpg" alt="" border="0"></a>
+										<img class="img-responsive" src="http://images.nitrosell.com/product_images/15/3652/9781843835110.jpg" alt="" border="0"></a>
 								</div>
-								<div class="col-md-4">
-									<a href="#"><img src="http://images.nitrosell.com/product_images/15/3652/9781444792119.jpg" alt="" border="0"></a>
+								<div class="col-md-4 col-xs-4">
+									<a href="#"><img class="img-responsive" src="http://images.nitrosell.com/product_images/15/3652/9781444792119.jpg" alt="" border="0"></a>
 								</div>
-								<div class="col-md-4">
-									<a href="#"><img src="http://images.nitrosell.com/product_images/15/3652/9781845950972.jpg" alt="" border="0"></a>
+								<div class="col-md-4 col-xs-4">
+									<a href="#"><img class="img-responsive" src="http://images.nitrosell.com/product_images/15/3652/9781845950972.jpg" alt="" border="0"></a>
 								</div>
 							</div>
 							<p>Discover more books about Agincourt in The National Archives' bookshop.</p>

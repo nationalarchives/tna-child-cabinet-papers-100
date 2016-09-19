@@ -81,7 +81,7 @@ h1 {
     bottom: 0;
     background: rgba(0, 0, 0, 0.80);
     position: absolute;
-    margin-bottom: 15px;
+    margin-bottom: 18px;
     margin-right: 15px;
     padding: 15px;
     a:hover {
@@ -129,4 +129,57 @@ section.container:last-of-type {
 }
 footer {
   margin-top: 1.5em;
+}
+
+@media only screen and (max-width: 480px) {
+  .cabinet-documents .caption {
+    margin-bottom: 0;
+  }
+  .img-box {
+    .col-md-4 {
+      a {
+        img {
+          width: 100%;
+        }
+      }
+    }
+  }
+  .alignright {
+    margin: 0;
+  }
+}
+
+@media only screen
+and (min-device-width : 768px)
+and (max-device-width : 1024px)
+and (orientation : portrait) {
+  .cabinet-documents {
+    .thumbnail {
+      a {
+        img {
+          width: 100%;
+        }
+      }
+    }
+  }
+  .cabinet-documents .caption {
+    margin-bottom: 0;
+  }
+  .img-box {
+    .col-md-4 {
+      a {
+        img {
+          width: 100%;
+        }
+      }
+    }
+  }
+  .alignright {
+    margin: auto;
+    float: none;
+    max-width: none !important;
+    img {
+      width: 100%;
+    }
+  }
 }
