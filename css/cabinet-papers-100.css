@@ -66,6 +66,16 @@ button.eye_caption, .image_caption_back {
 .cabinet-documents .thumbnail {
   padding: 0;
   border: none; }
+.cabinet-documents .thumbnail a {
+  display: block; }
+.cabinet-documents .thumbnail:focus {
+  background-color: #FCE45C;
+  color: #000;
+  outline: #ebab00 solid 3px; }
+  .cabinet-documents .thumbnail:focus a:focus {
+    background-color: #FCE45C;
+    color: #000;
+    outline: #ebab00 solid 3px; }
 .cabinet-documents .caption {
   color: #fff;
   bottom: 0;
@@ -76,9 +86,15 @@ button.eye_caption, .image_caption_back {
   padding: 15px; }
   .cabinet-documents .caption a:hover {
     color: #0084b4; }
-  .cabinet-documents .caption a h2 {
-    margin-top: 5px;
-    color: #0084b4; }
+  .cabinet-documents .caption a {
+    display: block; }
+    .cabinet-documents .caption a h2 {
+      margin-top: 5px;
+      color: #0084b4; }
+  .cabinet-documents .caption a:focus {
+    background-color: #FCE45C;
+    color: #000;
+    outline: #ebab00 solid 3px; }
   .cabinet-documents .caption p {
     margin-bottom: .5em; }
 
@@ -93,6 +109,8 @@ section.container:last-of-type {
       margin-bottom: 2em; }
       section.container:last-of-type .row .col-md-6 div.thumbnail .img-box .col-md-4 {
         margin-bottom: 2em; }
+        section.container:last-of-type .row .col-md-6 div.thumbnail .img-box .col-md-4 a {
+          display: block; }
     section.container:last-of-type .row .col-md-6 div.thumbnail p {
       padding-left: 15px;
       padding-top: 15px; }

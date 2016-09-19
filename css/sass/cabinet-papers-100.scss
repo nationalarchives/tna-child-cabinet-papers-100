@@ -90,6 +90,21 @@ button.eye_caption, .image_caption_back  {
     padding: 0;
     border: none;
   }
+  .thumbnail {
+    a {
+      display: block;
+    }
+  }
+  .thumbnail:focus {
+    background-color: #FCE45C;
+    color: #000;
+    outline: #ebab00 solid 3px;
+    a:focus {
+      background-color: #FCE45C;
+      color: #000;
+      outline: #ebab00 solid 3px;
+    }
+  }
   .caption {
     color: #fff;
     bottom: 0;
@@ -102,10 +117,16 @@ button.eye_caption, .image_caption_back  {
       color: #0084b4;
     }
     a {
+      display: block;
       h2 {
         margin-top: 5px;
         color: #0084b4;
       }
+    }
+    a:focus {
+      background-color: #FCE45C;
+      color: #000;
+      outline: #ebab00 solid 3px;
     }
     p {
       margin-bottom: .5em;
@@ -127,6 +148,9 @@ section.container:last-of-type {
             margin-bottom: 2em;
             .col-md-4 {
               margin-bottom: 2em;
+              a {
+                display: block;
+              }
             }
           }
           p {

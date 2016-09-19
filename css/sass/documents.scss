@@ -48,7 +48,6 @@ section.explore-records {
 
 .button {
   float:right;
-  display: inline-block;
 }
 .overlay {
   overflow: hidden;
@@ -90,7 +89,7 @@ section.explore-records {
   background-position: center;
   background-size: cover;
   background-repeat: no-repeat;
-  margin-left: 0px;
+  margin-left: 0;
   margin-bottom: 10px;
 }
 .document-slide-thumb:hover {

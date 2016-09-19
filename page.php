@@ -1,5 +1,5 @@
 <?php get_header(); ?>
-	<main>
+	<main role="main">
 		<div class="banner" style="background-image: url('<?php
 		$page_id = $post->ID;
 		$image = wp_get_attachment_image_src(get_post_thumbnail_id($page_id), 'single-post-thumbnail');
