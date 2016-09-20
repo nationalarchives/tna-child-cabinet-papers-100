@@ -30,14 +30,14 @@ function tna_child_styles()
 	wp_register_script( 'bx-slider-plugin', get_stylesheet_directory_uri() . '/js/lib/jquery.bxslider/jquery.bxslider.min.js', array( 'jquery' ),'','1.1', true);
 	wp_register_script( 'bx-slider', get_stylesheet_directory_uri() . '/js/bx-slider.js', array( 'jquery' ),'','1.1', true);
 
-	if (is_page_template ('documents.php')) { wp_enqueue_style('bx-slider-plugin-css'); }
-	if (is_page_template ('documents.php')) { wp_enqueue_script( 'bx-slider-plugin' ); }
-	if (is_page_template ('documents.php')) { wp_enqueue_script( 'bx-slider' ); }
+	if (is_page_template ('default')) { wp_enqueue_style('bx-slider-plugin-css'); }
+	if (is_page_template ('default')) { wp_enqueue_script( 'bx-slider-plugin' ); }
+	if (is_page_template ('default')) { wp_enqueue_script( 'bx-slider' ); }
     wp_enqueue_style('tna-parent-styles');
     wp_enqueue_style('tna-child-styles');
 	wp_enqueue_style('font-awesome');
-	if (is_page_template('default')) { wp_enqueue_style('tna-child-styles-cabinet-papers-100'); }
-	if (is_page_template ('documents.php')) { wp_enqueue_style('tna-child-styles-cabinet-documents-child'); }
+	if (is_page_template('page-cabinet-template.php')) { wp_enqueue_style('tna-child-styles-cabinet-papers-100'); }
+	if (is_page_template ('default')) { wp_enqueue_style('tna-child-styles-cabinet-documents-child'); }
 }
 
 add_action('wp_enqueue_scripts', 'tna_child_styles');
