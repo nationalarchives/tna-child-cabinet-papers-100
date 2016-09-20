@@ -135,7 +135,7 @@ section.explore-records {
     display: block !important;
     margin: 0; }
 
-  #slider-prev, #slider-next {
+  .explore-records {
     display: none; } }
 .no-js .bxslider {
   width: auto; }
