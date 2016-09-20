@@ -126,3 +126,12 @@ section.explore-records {
 
   .document-viewer a div {
     min-height: 250px; } }
+.no-js .bxslider {
+  width: auto; }
+
+.no-js .bxslider a {
+  float: left;
+  margin: .2em; }
+
+.no-js .document-slide-thumb {
+  width: 24em; }
