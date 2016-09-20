@@ -153,3 +153,7 @@ footer {
     max-width: none !important; }
     .alignright img {
       width: 100%; } }
+@media print {
+  .caption {
+    background-color: #fff !important;
+    width: 100%; } }

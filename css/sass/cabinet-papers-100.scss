@@ -230,3 +230,10 @@ and (orientation : portrait) {
     }
   }
 }
+
+@media print {
+  .caption {
+    background-color: #fff !important;
+    width: 100%;
+  }
+}

@@ -16,7 +16,11 @@ get_template_part( 'breadcrumb' ); ?>
 					if (has_post_thumbnail($page_id)) {
 						echo make_path_relative_no_pre_path($image[0]);
 					}
-					?>')"></div>
+					?>')">
+						<?php if ( has_post_thumbnail() ) : ?>
+								<?php the_post_thumbnail( 'full', array('class' => 'img-responsive')); ?>
+						<?php endif; ?>
+					</div>
 				</a>
 				<div class="overlay">
 					<a target="_blank" class="button align-right" href="<?php echo make_path_relative_no_pre_path($image[0]); ?>">View full image</a>
