@@ -50,8 +50,10 @@ section.explore-records {
   position: absolute;
   bottom: 0;
   right: 0;
+  background: #000000;
   background: rgba(0, 0, 0, 0.66);
   color: #ddd;
+  border: 5px solid #000000;
   border: 5px solid transparent; }
   .overlay a:hover {
     color: black; }
