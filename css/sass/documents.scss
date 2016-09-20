@@ -14,6 +14,22 @@ h1 {
 section.container {
   background-color: #fff;
   padding: 20px 40px !important;
+  .row {
+    div.document-viewer {
+      a {
+        display: block;
+      }
+      div.overlay {
+        .align-right:focus {
+          color: #fff !important;
+          display: block;
+        }
+      }
+    }
+  }
+}
+a.button.align-right:focus {
+  color: #fff!important;
 }
 
 section.explore-records {

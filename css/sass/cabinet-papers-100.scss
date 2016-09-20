@@ -11,9 +11,9 @@ h1 {
   }
 }
 
-button.eye_caption, .image_caption_back  {
-  top: 0;
-}
+//button.eye_caption, .image_caption_back  {
+//  top: 0;
+//}
 
 .row {
   div.col-md-6 {
@@ -171,6 +171,9 @@ footer {
 }
 
 @media only screen and (max-width: 480px) {
+  .eye_caption {
+    top: -4.5em;
+  }
   .cabinet-documents .caption {
     margin-bottom: 0;
   }
@@ -192,6 +195,9 @@ footer {
 and (min-device-width : 768px)
 and (max-device-width : 1024px)
 and (orientation : portrait) {
+  .eye_caption {
+    top: -1.5em;
+  }
   .cabinet-documents {
     .thumbnail {
       a {

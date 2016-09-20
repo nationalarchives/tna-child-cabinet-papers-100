@@ -7,6 +7,14 @@ h1 {
 section.container {
   background-color: #fff;
   padding: 20px 40px !important; }
+  section.container .row div.document-viewer a {
+    display: block; }
+  section.container .row div.document-viewer div.overlay .align-right:focus {
+    color: #fff !important;
+    display: block; }
+
+a.button.align-right:focus {
+  color: #fff !important; }
 
 section.explore-records {
   background-color: #e1e2e2; }

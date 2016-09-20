@@ -35,7 +35,7 @@ function tna_child_styles()
 	if (is_page_template ('default')) { wp_enqueue_script( 'bx-slider' ); }
     wp_enqueue_style('tna-parent-styles');
     wp_enqueue_style('tna-child-styles');
-	wp_enqueue_style('font-awesome');
+	if (is_page_template ('default')){ wp_enqueue_style('font-awesome'); }
 	if (is_page_template('page-cabinet-template.php')) { wp_enqueue_style('tna-child-styles-cabinet-papers-100'); }
 	if (is_page_template ('default')) { wp_enqueue_style('tna-child-styles-cabinet-documents-child'); }
 }

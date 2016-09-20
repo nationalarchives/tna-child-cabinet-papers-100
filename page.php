@@ -52,11 +52,10 @@ get_template_part( 'breadcrumb' ); ?>
 					<div class="document-slide-thumb" style="background-image: url('<?php
 					$page_id = $post->ID;
 					$image = wp_get_attachment_image_src(get_post_thumbnail_id($page_id), 'single-post-thumbnail');
-					$childimage = wp_get_attachment_image_src(get_post_thumbnail_id($post->post_parent), 'single-post-thumbnail');
+					//$childimage = wp_get_attachment_image_src(get_post_thumbnail_id($post->post_parent), 'single-post-thumbnail');
 					if (has_post_thumbnail($page_id)) {
 						echo make_path_relative_no_pre_path($image[0]);
-					} elseif (is_page($page_id)) {
-						echo make_path_relative_no_pre_path($childimage[0]);
+
 					}
 					?>')">
 					</div>
