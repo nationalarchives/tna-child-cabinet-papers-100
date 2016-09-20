@@ -86,6 +86,7 @@ button.eye_caption, .image_caption_back  {
 }
 
 .cabinet-documents {
+  position: relative;
   .thumbnail {
     padding: 0;
     border: none;
@@ -202,6 +203,8 @@ and (orientation : portrait) {
   }
   .cabinet-documents .caption {
     margin-bottom: 0;
+    width: 96%;
+    position: absolute;
   }
   .img-box {
     .col-md-4 {

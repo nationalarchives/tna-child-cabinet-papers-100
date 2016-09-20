@@ -63,40 +63,42 @@ button.eye_caption, .image_caption_back {
   margin: .5em;
   text-align: center; }
 
-.cabinet-documents .thumbnail {
-  padding: 0;
-  border: none; }
-.cabinet-documents .thumbnail a {
-  display: block; }
-.cabinet-documents .thumbnail:focus {
-  background-color: #FCE45C;
-  color: #000;
-  outline: #ebab00 solid 3px; }
-  .cabinet-documents .thumbnail:focus a:focus {
-    background-color: #FCE45C;
-    color: #000;
-    outline: #ebab00 solid 3px; }
-.cabinet-documents .caption {
-  color: #fff;
-  bottom: 0;
-  background: rgba(0, 0, 0, 0.8);
-  position: absolute;
-  margin-bottom: 18px;
-  margin-right: 15px;
-  padding: 15px; }
-  .cabinet-documents .caption a:hover {
-    color: #0084b4; }
-  .cabinet-documents .caption a {
+.cabinet-documents {
+  position: relative; }
+  .cabinet-documents .thumbnail {
+    padding: 0;
+    border: none; }
+  .cabinet-documents .thumbnail a {
     display: block; }
-    .cabinet-documents .caption a h2 {
-      margin-top: 5px;
-      color: #0084b4; }
-  .cabinet-documents .caption a:focus {
+  .cabinet-documents .thumbnail:focus {
     background-color: #FCE45C;
     color: #000;
     outline: #ebab00 solid 3px; }
-  .cabinet-documents .caption p {
-    margin-bottom: .5em; }
+    .cabinet-documents .thumbnail:focus a:focus {
+      background-color: #FCE45C;
+      color: #000;
+      outline: #ebab00 solid 3px; }
+  .cabinet-documents .caption {
+    color: #fff;
+    bottom: 0;
+    background: rgba(0, 0, 0, 0.8);
+    position: absolute;
+    margin-bottom: 18px;
+    margin-right: 15px;
+    padding: 15px; }
+    .cabinet-documents .caption a:hover {
+      color: #0084b4; }
+    .cabinet-documents .caption a {
+      display: block; }
+      .cabinet-documents .caption a h2 {
+        margin-top: 5px;
+        color: #0084b4; }
+    .cabinet-documents .caption a:focus {
+      background-color: #FCE45C;
+      color: #000;
+      outline: #ebab00 solid 3px; }
+    .cabinet-documents .caption p {
+      margin-bottom: .5em; }
 
 section.container:last-of-type {
   padding: 2em; }
@@ -135,7 +137,9 @@ footer {
     width: 100%; }
 
   .cabinet-documents .caption {
-    margin-bottom: 0; }
+    margin-bottom: 0;
+    width: 96%;
+    position: absolute; }
 
   .img-box .col-md-4 a img {
     width: 100%; }

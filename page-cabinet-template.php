@@ -65,7 +65,7 @@ get_header(); ?>
 							</div>
 							<div class="thumbnail">
 								<a href="<?php echo get_page_link(); ?>" title="<?php echo get_the_title(); ?>">
-									<?php the_post_thumbnail( 'custom-image', array('class' => 'img-responsive')); // to add a class to the img tag ?>
+									<?php the_post_thumbnail( 'custom-image', array('class' => 'img-responsive'));  ?>
 								</a>
 							</div>
 						</div>
