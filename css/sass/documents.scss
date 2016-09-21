@@ -194,6 +194,12 @@ and (max-device-width : 667px) {
   }
 }
 
+@media screen and (max-device-width: 420px) {
+  #slider-prev, #slider-next {
+    display: none;
+  }
+}
+
 @media print {
   .document-viewer img {
     display: block !important;

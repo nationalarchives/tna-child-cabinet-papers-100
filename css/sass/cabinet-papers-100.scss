@@ -110,7 +110,8 @@ h1 {
   .caption {
     color: #fff;
     bottom: 0;
-    background: rgba(0, 0, 0, 0.80);
+    background-color: #000000;
+    background-color: rgba(0, 0, 0, 0.80);
     position: absolute;
     padding: 1em;
     width: 100%;
@@ -170,7 +171,7 @@ footer {
   margin-top: 1.5em;
 }
 
-@media only screen and (max-width: 480px) {
+@media screen and (max-width: 480px) {
   .eye_caption {
     top: -4.5em;
   }
@@ -191,7 +192,7 @@ footer {
   }
 }
 
-@media only screen
+@media screen
 and (min-device-width : 768px)
 and (max-device-width : 1024px)
 and (orientation : portrait) {

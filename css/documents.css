@@ -132,6 +132,9 @@ section.explore-records {
 
   .document-viewer a div {
     min-height: 250px; } }
+@media screen and (max-device-width: 420px) {
+  #slider-prev, #slider-next {
+    display: none; } }
 @media print {
   .document-viewer img {
     display: block !important;
