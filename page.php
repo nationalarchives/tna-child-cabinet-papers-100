@@ -72,7 +72,17 @@ get_template_part( 'breadcrumb' ); ?>
 	<?php endif; wp_reset_postdata(); ?>
 	<section class="container">
 		<div class="row">
-			<a class="button align-right" href="<?php echo get_site_url(); ?>">Return to the Battle of Agincourt</a>
+			<a class="button align-right" href="<?php echo get_site_url(); ?>">
+				<?php
+				$page_id = $post->ID;
+				$parent = $post->post_parent;
+				$grandparent_get = get_post($parent);
+				$grandparent = $grandparent_get->post_parent;
+				if ($root_parent = get_the_title($grandparent) !== $root_parent = get_the_title($page_id))
+					{ echo get_the_title($grandparent); }
+				else { echo get_the_title($parent); }
+				?>
+			</a>
 		</div>
 	</section>
 </main>

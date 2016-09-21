@@ -82,13 +82,13 @@ get_header(); ?>
 							<div class="img-box">
 								<div class="col-md-4 col-xs-4">
 									<a href="#">
-										<img class="img-responsive" src="http://images.nitrosell.com/product_images/15/3652/9781843835110.jpg" alt="battle of agincourt" border="0"></a>
+										<img class="img-responsive" src="http://images.nitrosell.com/product_images/15/3652/9781843835110.jpg" alt="battle of agincourt"></a>
 								</div>
 								<div class="col-md-4 col-xs-4">
-									<a href="#"><img class="img-responsive" src="http://images.nitrosell.com/product_images/15/3652/9781444792119.jpg" alt="agincourt-ranulph fiennes" border="0"></a>
+									<a href="#"><img class="img-responsive" src="http://images.nitrosell.com/product_images/15/3652/9781444792119.jpg" alt="agincourt-ranulph fiennes"></a>
 								</div>
 								<div class="col-md-4 col-xs-4">
-									<a href="#"><img class="img-responsive" src="http://images.nitrosell.com/product_images/15/3652/9781845950972.jpg" alt="1415-Henry-V-Year_of_glory" border="0"></a>
+									<a href="#"><img class="img-responsive" src="http://images.nitrosell.com/product_images/15/3652/9781845950972.jpg" alt="1415-Henry-V-Year_of_glory"></a>
 								</div>
 							</div>
 							<p>Discover more books about Agincourt in The National Archives' bookshop.</p>
