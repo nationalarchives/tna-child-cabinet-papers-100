@@ -49,24 +49,26 @@ get_header(); ?>
 					if ( $the_query->have_posts() ) :
 					while ( $the_query->have_posts() ) : $the_query->the_post();
 					?>
-						<div class="col-md-6 cabinet-documents">
-							<div class="caption">
-								<a href="<?php echo get_page_link(); ?>" title="<?php echo get_the_title(); ?>">
-									<h2><?php echo get_the_title(); ?></h2>
-								</a>
-								<?php
+						<div class="col-md-6">
+							<div class="cabinet-documents">
+								<div class="thumbnail">
+									<a href="<?php echo get_page_link(); ?>" title="<?php echo get_the_title(); ?>">
+										<?php the_post_thumbnail( 'custom-image', array('class' => 'img-responsive'));  ?>
+									</a>
+								</div>
+								<div class="caption">
+									<a href="<?php echo get_page_link(); ?>" title="<?php echo get_the_title(); ?>">
+										<h2><?php echo get_the_title(); ?></h2>
+									</a>
+									<?php
 									if (has_excerpt()) {
 										the_excerpt();
 									}
 									else {
 										echo first_sentence(get_the_content());
 									}
-								?>
-							</div>
-							<div class="thumbnail">
-								<a href="<?php echo get_page_link(); ?>" title="<?php echo get_the_title(); ?>">
-									<?php the_post_thumbnail( 'custom-image', array('class' => 'img-responsive'));  ?>
-								</a>
+									?>
+								</div>
 							</div>
 						</div>
 					<?php endwhile; endif; ?>

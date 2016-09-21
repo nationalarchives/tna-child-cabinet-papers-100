@@ -90,10 +90,11 @@ h1 {
   .thumbnail {
     padding: 0;
     border: none;
-  }
-  .thumbnail {
     a {
       display: block;
+      img {
+        width: 100%;
+      }
     }
   }
   .thumbnail:focus {
@@ -111,9 +112,8 @@ h1 {
     bottom: 0;
     background: rgba(0, 0, 0, 0.80);
     position: absolute;
-    margin-bottom: 18px;
-    margin-right: 15px;
-    padding: 15px;
+    padding: 1em;
+    width: 100%;
     a:hover {
       color: #0084b4;
     }
@@ -206,11 +206,6 @@ and (orientation : portrait) {
         }
       }
     }
-  }
-  .cabinet-documents .caption {
-    margin-bottom: 0;
-    width: 96%;
-    position: absolute;
   }
   .img-box {
     .col-md-4 {
