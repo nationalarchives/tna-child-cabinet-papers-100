@@ -67,13 +67,15 @@ function additional_meta () {
 }
 add_action('add_meta_boxes', 'additional_meta');
 function additional_meta_callback( $post ) {
-	wp_nonce_field(basename( __FILE__), 'additional_meta_monce');
+	wp_nonce_field(basename( __FILE__), 'additional_meta_nonce');
 	$additional_stored_meta = get_post_meta ($post->ID); ?>
 	<div class="wrap">
 		<h4 style="color: #009999; font-size: 15px;">Left column section</h4>
 		<div class="meta-row">
 			<div class="meta-td">
-				<input placeholder="Enter the title for the left hand column" class="widefat" type="text" name="Left hand column title" id="Left hand column title" value=""/>
+				<input placeholder="Enter the title for the left hand column" class="widefat" type="text" name="left_column_title" id="left-column-title" value="<?php if ( ! empty ( $additional_stored_meta['left_column_title'] ) ) {
+					echo esc_attr( $additional_stored_meta['left_column_title'][0] );
+				} ?>"/>
 			</div>
 		</div>
 		<div class="meta-row">
@@ -93,10 +95,18 @@ function additional_meta_callback( $post ) {
 			?>
 		</div>
 		<hr style="margin-top: 2.5em;">
+		<span><i><strong>Note:</strong> If right column is empty the left column will be full width.</i></span>
 		<h4 style="color: #009999; font-size: 15px;">Right column section</h4>
 		<div class="meta-row">
 			<div class="meta-td">
-				<input placeholder="Enter the title for the right hand column" class="widefat" type="text" name="Right hand column title" id="Right hand column title" value=""/>
+				<input placeholder="Enter the title for the right hand column" class="widefat" type="text" name="right_column_title" id="right-column-title" value="<?php if ( ! empty ( $additional_stored_meta['right_column_title'] ) ) {
+					echo esc_attr( $additional_stored_meta['right_column_title'][0] );
+				} ?>"/>
+			</div>
+		</div>
+		<div class="meta-row">
+			<div class="meta-th" style="margin-top: 2em;">
+				<span><strong>Add content for right column box</strong></span>
 			</div>
 		</div>
 		<div class="meta-editor" style="margin-top: 1em;">
@@ -111,4 +121,29 @@ function additional_meta_callback( $post ) {
 			?>
 		</div>
 	</div>
-<?php } ?>
+<?php }
+function additional_meta_save ( $post_id ) {
+	// Checks save status
+	$is_autosave = wp_is_post_autosave( $post_id );
+	$is_revision = wp_is_post_revision( $post_id );
+	$is_valid_nonce = ( isset( $_POST[ 'additional_meta_nonce' ] ) && wp_verify_nonce( $_POST[ 'additional_meta_nonce' ], basename( __FILE__ ) ) ) ? 'true' : 'false';
+	// Exits script depending on save status
+	if ( $is_autosave || $is_revision || !$is_valid_nonce ) {
+		return;
+	}
+	//Left column save and update
+	if ( isset( $_POST[ 'left_column_title' ] ) ) {
+		update_post_meta( $post_id, 'left_column_title', sanitize_text_field( $_POST[ 'left_column_title' ] ) );
+	}
+	if ( isset( $_POST[ 'left_content' ] ) ) {
+		update_post_meta( $post_id, 'left_content', sanitize_text_field( $_POST[ 'left_content' ] ) );
+	}
+	//Right column save and update
+	if ( isset( $_POST[ 'right_column_title' ] ) ) {
+		update_post_meta( $post_id, 'right_column_title', sanitize_text_field( $_POST[ 'right_column_title' ] ) );
+	}
+	if ( isset( $_POST[ 'right_content' ] ) ) {
+		update_post_meta( $post_id, 'right_content', sanitize_text_field( $_POST[ 'right_content' ] ) );
+	}
+}
+add_action( 'save_post', 'additional_meta_save' );
