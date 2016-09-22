@@ -12,6 +12,11 @@ h1 {
 .row div.col-md-6 div.thumbnail ul {
   margin-left: .5em; }
 
+.thumbnail {
+  border: none;
+  border-radius: 0;
+  padding: 1em; }
+
 .tna-breadcrumb {
   margin-top: 0; }
   .tna-breadcrumb .container .row .col-md-12 {
