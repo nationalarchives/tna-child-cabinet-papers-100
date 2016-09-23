@@ -25,15 +25,17 @@ get_header(); ?>
 					</div>
 				</div>
 			</div>
+			<?php if (have_posts()) : ?>
 			<section class="container parent-content">
 				<div class="row">
 					<div class="col-md-12">
-						<?php if (have_posts()) : while (have_posts()) : the_post(); ?>
+						<?php while (have_posts()) : the_post(); ?>
 							<?php the_content(); ?>
-						<?php endwhile; endif; ?>
+						<?php endwhile; ?>
 					</div>
 				</div>
 			</section>
+			<?php endif; ?>
 			<section class="container">
 				<div class="row">
 					<?php
@@ -52,12 +54,12 @@ get_header(); ?>
 						<div class="col-md-6">
 							<div class="cabinet-documents">
 								<div class="thumbnail">
-									<a href="<?php echo get_page_link(); ?>" title="<?php echo get_the_title(); ?>">
+									<a href="<?php echo make_path_relative(get_page_link()); ?>" title="<?php echo get_the_title(); ?>">
 										<?php the_post_thumbnail( 'custom-image', array('class' => 'img-responsive'));  ?>
 									</a>
 								</div>
 								<div class="caption">
-									<a href="<?php echo get_page_link(); ?>" title="<?php echo get_the_title(); ?>">
+									<a href="<?php echo make_path_relative(get_page_link()); ?>" title="<?php echo get_the_title(); ?>">
 										<h2><?php echo get_the_title(); ?></h2>
 									</a>
 									<?php

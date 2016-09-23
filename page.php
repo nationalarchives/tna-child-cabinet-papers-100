@@ -52,7 +52,7 @@ get_template_part( 'breadcrumb' ); ?>
 			<span id="slider-next"></span>
 			<div class="bxslider">
 				<?php while ( $the_query->have_posts() ) : $the_query->the_post(); ?>
-				<a href="<?php echo get_page_link(); ?>">
+				<a href="<?php echo make_path_relative(get_page_link()); ?>">
 					<div class="document-slide-thumb" style="background-image: url('<?php
 					$page_id = $post->ID;
 					$image = wp_get_attachment_image_src(get_post_thumbnail_id($page_id), 'single-post-thumbnail');
@@ -72,7 +72,7 @@ get_template_part( 'breadcrumb' ); ?>
 	<?php endif; wp_reset_postdata(); ?>
 	<section class="container">
 		<div class="row">
-			<a class="button align-right" href="<?php echo get_site_url(); ?>">
+			<a class="button align-right" href="<?php echo make_path_relative(get_site_url()); ?>">
 				<?php
 				$page_id = $post->ID;
 				$parent = $post->post_parent;
