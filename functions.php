@@ -46,7 +46,7 @@ add_action('wp_enqueue_scripts', 'tna_child_styles');
 add_action( 'after_setup_theme', 'theme_setup' );
 function theme_setup() {
 	if ( function_exists( 'add_theme_support' ) ) {
-		add_image_size( 'custom-image', 612, 470, array('center','center') );
+		add_image_size( 'custom-image', 612, 470, array('center','top') );
 	}
 }
 
@@ -147,3 +147,4 @@ function additional_meta_save ( $post_id ) {
 	}
 }
 add_action( 'save_post', 'additional_meta_save' );
+//End //Adding the custom field for the  Additional boxes.

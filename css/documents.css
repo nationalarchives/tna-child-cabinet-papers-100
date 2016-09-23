@@ -38,7 +38,7 @@ section.explore-records {
     margin-right: auto;
     min-height: 300px;
     background-size: cover !important;
-    background: transparent center no-repeat; }
+    background: transparent no-repeat; }
     .document-viewer a div img {
       display: none; }
 
