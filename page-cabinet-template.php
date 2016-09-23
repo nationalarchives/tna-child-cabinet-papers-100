@@ -76,38 +76,6 @@ get_header(); ?>
 					<?php endwhile; endif; ?>
 				</div>
 			</section>
-			<section class="container">
-				<div class="row">
-					<div class="col-md-6">
-						<div class="thumbnail">
-							<h2>Bookshop</h2>
-							<div class="img-box">
-								<div class="col-md-4 col-xs-4">
-									<a href="#">
-										<img class="img-responsive" src="http://images.nitrosell.com/product_images/15/3652/9781843835110.jpg" alt="battle of agincourt"></a>
-								</div>
-								<div class="col-md-4 col-xs-4">
-									<a href="#"><img class="img-responsive" src="http://images.nitrosell.com/product_images/15/3652/9781444792119.jpg" alt="agincourt-ranulph fiennes"></a>
-								</div>
-								<div class="col-md-4 col-xs-4">
-									<a href="#"><img class="img-responsive" src="http://images.nitrosell.com/product_images/15/3652/9781845950972.jpg" alt="1415-Henry-V-Year_of_glory"></a>
-								</div>
-							</div>
-							<p>Discover more books about Agincourt in The National Archives' bookshop.</p>
-						</div>
-					</div>
-					<div class="col-md-6">
-						<div class="thumbnail">
-							<h2>Related links</h2>
-							<ul>
-								<li><a href="http://www.agincourt600.com/" title="Agincourt600 website">Agincourt600</a></li>
-								<li><a href="http://www.medievalsoldier.org/" title="The soldier in later Medieval England">The soldier in later Medieval England</a></li>
-								<li><a href="http://www.nationalarchives.gov.uk/help-with-your-research/research-guides/medieval-early-modern-soldiers/" title="Research guide: Medieval and early modern soldiers">Research guide: Medieval and early modern soldiers</a></li>
-							</ul>
-						</div>
-					</div>
-				</div>
-			</section>
 			<?php
 			$left_title = get_post_meta($page_id, 'left_column_title', true);
 			$left_content = get_post_meta($page_id, 'left_content', true);
