@@ -104,20 +104,18 @@ h1 {
     .cabinet-documents .caption p {
       margin-bottom: .5em; }
 
-section.container:last-of-type {
+section.container {
   padding: 2em; }
-  section.container:last-of-type .row .col-md-6 div.thumbnail {
+  section.container .row .col-md-6 div.thumbnail {
     border: none;
     border-radius: 0; }
-    section.container:last-of-type .row .col-md-6 div.thumbnail h2 {
-      padding: 15px; }
-    section.container:last-of-type .row .col-md-6 div.thumbnail .img-box {
+    section.container .row .col-md-6 div.thumbnail .img-box {
       margin-bottom: 2em; }
-      section.container:last-of-type .row .col-md-6 div.thumbnail .img-box .col-md-4 {
+      section.container .row .col-md-6 div.thumbnail .img-box .col-md-4 {
         margin-bottom: 2em; }
-        section.container:last-of-type .row .col-md-6 div.thumbnail .img-box .col-md-4 a {
+        section.container .row .col-md-6 div.thumbnail .img-box .col-md-4 a {
           display: block; }
-    section.container:last-of-type .row .col-md-6 div.thumbnail p {
+    section.container .row .col-md-6 div.thumbnail p {
       padding-left: 15px;
       padding-top: 15px; }
 

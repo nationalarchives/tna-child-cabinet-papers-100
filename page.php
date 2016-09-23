@@ -79,9 +79,9 @@ get_template_part( 'breadcrumb' ); ?>
 				$grandparent_get = get_post($parent);
 				$grandparent = $grandparent_get->post_parent;
 				if (get_the_title($grandparent) !== get_the_title($page_id))
-					{ echo get_the_title($grandparent); }
+					{ echo 'Return to '.get_the_title($grandparent); }
 				else
-					{ echo get_the_title($parent); }
+					{ echo 'Return to '.get_the_title($parent); }
 				?>
 			</a>
 		</div>

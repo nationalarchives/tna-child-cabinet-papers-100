@@ -108,6 +108,35 @@ get_header(); ?>
 					</div>
 				</div>
 			</section>
+			<?php
+			$left_title = get_post_meta($page_id, 'left_column_title', true);
+			$left_content = get_post_meta($page_id, 'left_content', true);
+			$right_title = get_post_meta($page_id, 'right_column_title', true);
+			$right_content = get_post_meta($page_id, 'right_content', true);
+			if ( !empty($left_title) || !empty($left_content)  ) : ?>
+			<section class="container">
+				<div class="row">
+					<div class="<?php if ( empty($right_title) || empty($right_content ) ) { echo 'col-md-12'; } else { echo 'col-md-6'; } ?>">
+						<div class="thumbnail">
+							<h2><?php echo $left_title; ?></h2>
+							<div class="img-box">
+								<?php echo $left_content; ?>
+							</div>
+						</div>
+					</div>
+					<?php if( !empty($right_content) || !empty($right_content) ) : ?>
+					<div class="col-md-6">
+						<div class="thumbnail">
+							<h2><?php echo $right_title; ?></h2>
+							<div class="img-box">
+								<?php echo $right_content; ?>
+							</div>
+						</div>
+					</div>
+					<?php endif; ?>
+				</div>
+			</section>
+			<?php endif; ?>
 		</div>
 	</main>
 <?php get_footer(); ?>

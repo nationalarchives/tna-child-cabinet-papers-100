@@ -138,16 +138,13 @@ h1 {
   }
 }
 
-section.container:last-of-type {
+section.container {
   padding: 2em;
   .row {
     .col-md-6 {
         div.thumbnail {
           border: none;
           border-radius: 0;
-          h2 {
-            padding: 15px;
-          }
           .img-box {
             margin-bottom: 2em;
             .col-md-4 {
