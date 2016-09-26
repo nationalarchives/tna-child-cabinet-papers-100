@@ -43,7 +43,7 @@ get_header(); ?>
 					$args = array(
 						'post_parent'   => $parent_id,
 						'post_type'     => 'page',
-						'post_per_page' => -1,
+						'posts_per_page' => -1,
 						'orderby'       => 'menu_order',
 						'order'         => 'ASC'
 					);
