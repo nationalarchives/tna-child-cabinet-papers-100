@@ -36,7 +36,7 @@ function tna_child_styles()
     wp_enqueue_style('tna-parent-styles');
     wp_enqueue_style('tna-child-styles');
 	if (is_page_template ('default')){ wp_enqueue_style('font-awesome'); }
-	if (is_page_template('page-cabinet-template.php')) { wp_enqueue_style('tna-child-styles-cabinet-papers-100'); }
+	if (is_page_template('page-homepage-template.php')) { wp_enqueue_style('tna-child-styles-cabinet-papers-100'); }
 	if (is_page_template ('default')) { wp_enqueue_style('tna-child-styles-cabinet-documents-child'); }
 }
 
@@ -54,7 +54,7 @@ function theme_setup() {
 function additional_meta () {
 	global $post;
 	$pageTemplate = get_post_meta($post->ID, '_wp_page_template', true);
-	if ($pageTemplate == 'page-cabinet-template.php') {
+	if ($pageTemplate == 'page-homepage-template.php') {
 		add_meta_box (
 			'additional_meta',
 			'Additional Content',
@@ -70,17 +70,17 @@ function additional_meta_callback( $post ) {
 	wp_nonce_field(basename( __FILE__), 'additional_meta_nonce');
 	$additional_stored_meta = get_post_meta ($post->ID); ?>
 	<div class="wrap">
-		<h4 style="color: #009999; font-size: 15px;">Left column section</h4>
+		<h4 style="color: #009999; font-size: 15px;">1st column section</h4>
 		<div class="meta-row">
 			<div class="meta-td">
-				<input placeholder="Enter the title for the left hand column" class="widefat" type="text" name="left_column_title" id="left-column-title" value="<?php if ( ! empty ( $additional_stored_meta['left_column_title'] ) ) {
+				<input placeholder="Enter the title for the 1st column" class="widefat" type="text" name="left_column_title" id="left-column-title" value="<?php if ( ! empty ( $additional_stored_meta['left_column_title'] ) ) {
 					echo esc_attr( $additional_stored_meta['left_column_title'][0] );
 				} ?>"/>
 			</div>
 		</div>
 		<div class="meta-row">
 			<div class="meta-th" style="margin-top: 2em;">
-				<span><strong>Add content for left column box</strong></span>
+				<span><strong>Add content for 1st column box</strong></span>
 			</div>
 		</div>
 		<div class="meta-editor" style="margin-top: 1em;">
@@ -95,18 +95,18 @@ function additional_meta_callback( $post ) {
 			?>
 		</div>
 		<hr style="margin-top: 2.5em;">
-		<span><i><strong>Note:</strong> If right column is empty the left column will be full width.</i></span>
-		<h4 style="color: #009999; font-size: 15px;">Right column section</h4>
+		<span><i><strong>Note:</strong> If 2nd column is empty the 1st column will be full width.</i></span>
+		<h4 style="color: #009999; font-size: 15px;">2nd column section</h4>
 		<div class="meta-row">
 			<div class="meta-td">
-				<input placeholder="Enter the title for the right hand column" class="widefat" type="text" name="right_column_title" id="right-column-title" value="<?php if ( ! empty ( $additional_stored_meta['right_column_title'] ) ) {
+				<input placeholder="Enter the title for the 2nd column" class="widefat" type="text" name="right_column_title" id="right-column-title" value="<?php if ( ! empty ( $additional_stored_meta['right_column_title'] ) ) {
 					echo esc_attr( $additional_stored_meta['right_column_title'][0] );
 				} ?>"/>
 			</div>
 		</div>
 		<div class="meta-row">
 			<div class="meta-th" style="margin-top: 2em;">
-				<span><strong>Add content for right column box</strong></span>
+				<span><strong>Add content for 2nd column box</strong></span>
 			</div>
 		</div>
 		<div class="meta-editor" style="margin-top: 1em;">
@@ -148,3 +148,12 @@ function additional_meta_save ( $post_id ) {
 }
 add_action( 'save_post', 'additional_meta_save' );
 //End //Adding the custom field for the  Additional boxes.
+
+
+// Remove page templates inherited from the parent theme.
+function remove_page_template( $page_templates ) {
+	unset( $page_templates['page-section-landing.php'], $page_templates['page-level-1-landing.php'] );
+	return $page_templates;
+}
+add_filter( 'theme_page_templates', 'remove_page_template' );
+//End // Remove page templates inherited from the parent theme.

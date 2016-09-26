@@ -72,18 +72,14 @@ get_template_part( 'breadcrumb' ); ?>
 	<?php endif; wp_reset_postdata(); ?>
 	<section class="container">
 		<div class="row">
-			<a class="button align-right" href="<?php echo make_path_relative(get_site_url()); ?>">
-				<?php
-				$page_id = $post->ID;
-				$parent = $post->post_parent;
-				$grandparent_get = get_post($parent);
-				$grandparent = $grandparent_get->post_parent;
-				if (get_the_title($grandparent) !== get_the_title($page_id))
-					{ echo 'Return to '.get_the_title($grandparent); }
-				else
-					{ echo 'Return to '.get_the_title($parent); }
-				?>
-			</a>
+			<div class="col-md-12">
+				<?php $parent = $post->post_parent;
+				if ($parent) : ?>
+					<a class="button align-right" href="<?php echo make_path_relative(get_permalink( $parent )); ?>">
+						<?php echo 'Return to '.get_the_title($parent); ?>
+					</a>
+				<?php endif; ?>
+			</div>
 		</div>
 	</section>
 </main>

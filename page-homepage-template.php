@@ -1,6 +1,6 @@
 <?php
 /*
-Template Name: Cabinet documents
+Template Name: Homepage template
 */
 get_header(); ?>
 	<main role="main">
