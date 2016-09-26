@@ -38,7 +38,7 @@ get_template_part( 'breadcrumb' ); ?>
 		$args = array(
 			'post_parent'   => $page_id,
 			'post_type'     => 'page',
-			'post_per_page' => -1,
+			'posts_per_page' => -1,
 			'orderby'       => 'menu_order',
 			'order'         => 'ASC'
 		);
