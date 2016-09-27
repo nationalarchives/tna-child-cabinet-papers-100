@@ -2,12 +2,6 @@ $grey-background: #e1e2e2;
 $grey-background-hex: rgba(225, 226, 226, 1);
 $primary-blue: #0084B4;
 
-.tna-breadcrumb {
-  .breadcrumbs {
-    background-color: transparent;
-  }
-}
-
 h1 {
   margin-top: 0;
 }
@@ -58,7 +52,7 @@ section.explore-records {
       margin-right: auto;
       min-height: 300px;
       background-size: cover !important;
-      background: transparent center no-repeat;
+      background: transparent no-repeat;
       img {
         display: none;
       }

@@ -11,10 +11,6 @@ h1 {
   }
 }
 
-//button.eye_caption, .image_caption_back  {
-//  top: 0;
-//}
-
 .row {
   div.col-md-6 {
     div.thumbnail {
@@ -23,6 +19,12 @@ h1 {
       }
     }
   }
+}
+
+.thumbnail {
+  border: none;
+  border-radius: 0;
+  padding: 1em;
 }
 
 .tna-breadcrumb {
@@ -48,7 +50,7 @@ h1 {
 
 .banner {
   background: no-repeat top center;
-  background-size: 1600px auto;
+  background-size: 1900px auto;
 }
 .container:first-of-type {
   margin-top: 0;
@@ -136,16 +138,13 @@ h1 {
   }
 }
 
-section.container:last-of-type {
+section.container {
   padding: 2em;
   .row {
     .col-md-6 {
         div.thumbnail {
           border: none;
           border-radius: 0;
-          h2 {
-            padding: 15px;
-          }
           .img-box {
             margin-bottom: 2em;
             .col-md-4 {

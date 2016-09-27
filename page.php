@@ -38,7 +38,7 @@ get_template_part( 'breadcrumb' ); ?>
 		$args = array(
 			'post_parent'   => $page_id,
 			'post_type'     => 'page',
-			'post_per_page' => -1,
+			'posts_per_page' => -1,
 			'orderby'       => 'menu_order',
 			'order'         => 'ASC'
 		);
@@ -52,7 +52,7 @@ get_template_part( 'breadcrumb' ); ?>
 			<span id="slider-next"></span>
 			<div class="bxslider">
 				<?php while ( $the_query->have_posts() ) : $the_query->the_post(); ?>
-				<a href="<?php echo get_page_link(); ?>">
+				<a href="<?php echo make_path_relative(get_page_link()); ?>">
 					<div class="document-slide-thumb" style="background-image: url('<?php
 					$page_id = $post->ID;
 					$image = wp_get_attachment_image_src(get_post_thumbnail_id($page_id), 'single-post-thumbnail');
@@ -72,18 +72,14 @@ get_template_part( 'breadcrumb' ); ?>
 	<?php endif; wp_reset_postdata(); ?>
 	<section class="container">
 		<div class="row">
-			<a class="button align-right" href="<?php echo get_site_url(); ?>">
-				<?php
-				$page_id = $post->ID;
-				$parent = $post->post_parent;
-				$grandparent_get = get_post($parent);
-				$grandparent = $grandparent_get->post_parent;
-				if (get_the_title($grandparent) !== get_the_title($page_id))
-					{ echo get_the_title($grandparent); }
-				else
-					{ echo get_the_title($parent); }
-				?>
-			</a>
+			<div class="col-md-12">
+				<?php $parent = $post->post_parent;
+				if ($parent) : ?>
+					<a class="button align-right" href="<?php echo make_path_relative(get_permalink( $parent )); ?>">
+						<?php echo 'Return to '.get_the_title($parent); ?>
+					</a>
+				<?php endif; ?>
+			</div>
 		</div>
 	</section>
 </main>
