@@ -50,7 +50,7 @@ section.explore-records {
       top: 0;
       margin-left: auto;
       margin-right: auto;
-      min-height: 300px;
+      min-height: 450px;
       background-size: cover !important;
       background: transparent no-repeat;
       img {
@@ -132,7 +132,7 @@ section.explore-records {
   .document-viewer {
     a {
       div {
-        min-height: 540px;
+        min-height: 680px;
         img {
           display: none;
         }
@@ -179,6 +179,16 @@ and (max-device-width : 667px) {
   #slider-prev, #slider-next {
     display: none;
   }
+  .document-viewer {
+    a {
+      div {
+        min-height: 250px;
+      }
+    }
+  }
+}
+
+@media screen and (min-device-width : 320px) and (max-device-width : 568px) {
   .document-viewer {
     a {
       div {

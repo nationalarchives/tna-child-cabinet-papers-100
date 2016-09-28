@@ -126,9 +126,9 @@ footer {
   margin-top: 1.5em; }
 
 @media screen and (max-width: 480px) {
-  .eye_caption {
-    top: -4.5em; }
-
+  /*.eye_caption {
+    top: -4.5em;
+  }*/
   .cabinet-documents .caption {
     margin-bottom: 0; }
 
@@ -138,9 +138,9 @@ footer {
   .alignright {
     margin: 0; } }
 @media screen and (min-device-width: 768px) and (max-device-width: 1024px) and (orientation: portrait) {
-  .eye_caption {
-    top: -1.5em; }
-
+  /*.eye_caption {
+    top: -1.5em;
+  }*/
   .cabinet-documents .thumbnail a img {
     width: 100%; }
 

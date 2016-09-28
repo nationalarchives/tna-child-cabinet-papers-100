@@ -171,9 +171,9 @@ footer {
 }
 
 @media screen and (max-width: 480px) {
-  .eye_caption {
+  /*.eye_caption {
     top: -4.5em;
-  }
+  }*/
   .cabinet-documents .caption {
     margin-bottom: 0;
   }
@@ -195,9 +195,9 @@ footer {
 and (min-device-width : 768px)
 and (max-device-width : 1024px)
 and (orientation : portrait) {
-  .eye_caption {
+  /*.eye_caption {
     top: -1.5em;
-  }
+  }*/
   .cabinet-documents {
     .thumbnail {
       a {

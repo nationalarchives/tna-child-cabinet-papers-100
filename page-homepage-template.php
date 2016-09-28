@@ -4,7 +4,7 @@ Template Name: Homepage template
 */
 get_header(); ?>
 	<main role="main">
-		<div class="banner" style="background-image: url('<?php
+		<div class="banner feature-img" style="background-image: url('<?php
 		$page_id = $post->ID;
 		$image = wp_get_attachment_image_src(get_post_thumbnail_id($page_id), 'single-post-thumbnail');
 		$childimage = wp_get_attachment_image_src(get_post_thumbnail_id($post->post_parent), 'single-post-thumbnail');
@@ -17,9 +17,9 @@ get_header(); ?>
 			<?php get_template_part('breadcrumb'); ?>
 			<div class="heading-banner text-left">
 				<div class="container">
+					<?php get_image_caption('top'); ?>
 					<div class="row">
 						<div class="col-md-12">
-							<?php get_image_caption(); ?>
 							<h1><span><?php echo get_the_title(); ?></span></h1>
 						</div>
 					</div>
