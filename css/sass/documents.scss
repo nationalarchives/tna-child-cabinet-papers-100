@@ -51,6 +51,7 @@ section.explore-records {
       margin-left: auto;
       margin-right: auto;
       min-height: 450px;
+      background-position: center top;
       background-size: cover !important;
       background: transparent no-repeat;
       img {
@@ -183,6 +184,7 @@ and (max-device-width : 667px) {
     a {
       div {
         min-height: 250px;
+        background-position: center top;
       }
     }
   }
@@ -193,8 +195,15 @@ and (max-device-width : 667px) {
     a {
       div {
         min-height: 250px;
+        background-position: center top;
       }
     }
+  }
+}
+
+@media screen and (max-width: 480px) {
+  .feature-img .img-caption-top {
+    top: 0;
   }
 }
 

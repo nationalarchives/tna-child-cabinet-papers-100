@@ -5,7 +5,7 @@ get_template_part( 'breadcrumb' ); ?>
 	<section class="container">
 		<div class="row">
 			<h1><?php the_title() ?></h1>
-			<div class="document-viewer">
+			<div class="document-viewer feature-img">
 				<?php
 				$page_id = $post->ID;
 				$image = wp_get_attachment_image_src(get_post_thumbnail_id($page_id), 'single-post-thumbnail');
@@ -22,6 +22,7 @@ get_template_part( 'breadcrumb' ); ?>
 						<?php endif; ?>
 					</div>
 				</a>
+				<?php get_image_caption('top'); ?>
 				<div class="overlay">
 					<a target="_blank" class="button align-right" href="<?php echo make_path_relative_no_pre_path($image[0]); ?>">View full image</a>
 				</div>

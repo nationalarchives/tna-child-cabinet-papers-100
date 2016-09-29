@@ -34,6 +34,7 @@ section.explore-records {
     margin-left: auto;
     margin-right: auto;
     min-height: 450px;
+    background-position: center top;
     background-size: cover !important;
     background: transparent no-repeat; }
     .document-viewer a div img {
@@ -128,10 +129,15 @@ section.explore-records {
     display: none; }
 
   .document-viewer a div {
-    min-height: 250px; } }
+    min-height: 250px;
+    background-position: center top; } }
 @media screen and (min-device-width: 320px) and (max-device-width: 568px) {
   .document-viewer a div {
-    min-height: 250px; } }
+    min-height: 250px;
+    background-position: center top; } }
+@media screen and (max-width: 480px) {
+  .feature-img .img-caption-top {
+    top: 0; } }
 @media screen and (max-device-width: 420px) {
   #slider-prev, #slider-next {
     display: none; } }
