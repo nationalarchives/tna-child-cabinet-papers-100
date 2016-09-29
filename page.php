@@ -74,10 +74,17 @@ get_template_part( 'breadcrumb' ); ?>
 	<section class="container">
 		<div class="row">
 			<div class="col-md-12">
-				<?php $parent = $post->post_parent;
-				if ($parent) : ?>
+				<?php
+				global $post;
+				$parent = $post->post_parent;
+				$home_title = get_the_title( get_option('page_on_front') );
+				if (is_page() && $parent) : ?>
 					<a class="button align-right" href="<?php echo make_path_relative(get_permalink( $parent )); ?>">
 						<?php echo 'Return to '.get_the_title($parent); ?>
+					</a>
+				<?php else : ?>
+					<a class="button align-right" href="<?php echo make_path_relative(get_site_url()); ?>">
+						<?php echo 'Return to '.$home_title; ?>
 					</a>
 				<?php endif; ?>
 			</div>

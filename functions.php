@@ -157,3 +157,10 @@ function remove_page_template( $page_templates ) {
 }
 add_filter( 'theme_page_templates', 'remove_page_template' );
 //End // Remove page templates inherited from the parent theme.
+
+
+//Add category to pages
+function add_category_to_pages() {
+	register_taxonomy_for_object_type( 'category', 'page' );
+}
+add_action( 'init', 'add_category_to_pages' );

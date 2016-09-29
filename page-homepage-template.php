@@ -41,7 +41,7 @@ get_header(); ?>
 					<?php
 					$parent_id = get_the_ID();
 					$args = array(
-						'post_parent'   => $parent_id,
+						'category_name' => 'homepage',
 						'post_type'     => 'page',
 						'posts_per_page' => -1,
 						'orderby'       => 'menu_order',
