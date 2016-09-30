@@ -16,7 +16,7 @@ function setThemeGlobals($environment = null) {
     switch ($environment) {
         case 'internal':
         case 'development':
-            $pre_path = '/cabinet-papers-100';
+            $pre_path = '';
             $pre_crumbs = array('Cabinet papers 100' => '/');
             break;
         case 'external':
