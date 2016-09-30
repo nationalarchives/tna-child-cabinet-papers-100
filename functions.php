@@ -47,6 +47,7 @@ add_action( 'after_setup_theme', 'theme_setup' );
 function theme_setup() {
 	if ( function_exists( 'add_theme_support' ) ) {
 		add_image_size( 'custom-image', 612, 470, array('center','top') );
+		add_image_size( 'sub-page-image', 1600, 680, array('center','top') );
 	}
 }
 

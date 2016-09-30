@@ -12,13 +12,9 @@ get_template_part( 'breadcrumb' ); ?>
 				$childimage = wp_get_attachment_image_src(get_post_thumbnail_id($post->post_parent), 'single-post-thumbnail');
 				?>
 				<a href="<?php echo make_path_relative_no_pre_path($image[0]); ?>" target="_blank">
-					<div style="background-image: url('<?php
-					if (has_post_thumbnail($page_id)) {
-						echo make_path_relative_no_pre_path($image[0]);
-					}
-					?>')">
+					<div>
 						<?php if ( has_post_thumbnail() ) : ?>
-								<?php the_post_thumbnail( 'full', array('class' => 'img-responsive')); ?>
+								<?php the_post_thumbnail( 'sub-page-image', array('class' => 'img-responsive')); ?>
 						<?php endif; ?>
 					</div>
 				</a>

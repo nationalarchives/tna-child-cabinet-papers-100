@@ -39,23 +39,21 @@ section.explore-records {
   width: 100%;
   height: auto;
   background: #ddd;
-  padding: 1em 0;
   position: relative;
   text-align: center;
   overflow: hidden;
   margin-bottom: 10px;
   a {
     div {
-      width: 90%;
+      padding: 1em;
       top: 0;
       margin-left: auto;
       margin-right: auto;
-      min-height: 450px;
       background-position: center top;
       background-size: cover !important;
       background: transparent no-repeat;
       img {
-        display: none;
+        width: 100%;
       }
     }
   }
@@ -130,16 +128,6 @@ section.explore-records {
 }
 
 @media screen and (min-width: 769px) {
-  .document-viewer {
-    a {
-      div {
-        min-height: 680px;
-        img {
-          display: none;
-        }
-      }
-    }
-  }
   .bx-controls {
     display: none;
   }
@@ -180,25 +168,6 @@ and (max-device-width : 667px) {
   #slider-prev, #slider-next {
     display: none;
   }
-  .document-viewer {
-    a {
-      div {
-        min-height: 250px;
-        background-position: center top;
-      }
-    }
-  }
-}
-
-@media screen and (min-device-width : 320px) and (max-device-width : 568px) {
-  .document-viewer {
-    a {
-      div {
-        min-height: 250px;
-        background-position: center top;
-      }
-    }
-  }
 }
 
 @media screen and (max-width: 480px) {
@@ -214,10 +183,6 @@ and (max-device-width : 667px) {
 }
 
 @media print {
-  .document-viewer img {
-    display: block !important;
-    margin: 0;
-  }
   .explore-records {
     display: none;
   }
