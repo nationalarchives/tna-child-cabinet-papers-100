@@ -20,7 +20,7 @@ get_header(); ?>
 					<div class="row">
 						<div class="col-md-12">
 							<?php get_image_caption('top'); ?>
-							<h1><span><?php echo get_the_title(); ?></span></h1>
+							<h1 class="super-heading"><?php echo get_the_title(); ?></h1>
 						</div>
 					</div>
 				</div>
