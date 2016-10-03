@@ -137,14 +137,14 @@ function additional_meta_save ( $post_id ) {
 		update_post_meta( $post_id, 'left_column_title', sanitize_text_field( $_POST[ 'left_column_title' ] ) );
 	}
 	if ( isset( $_POST[ 'left_content' ] ) ) {
-		update_post_meta( $post_id, 'left_content', sanitize_text_field( $_POST[ 'left_content' ] ) );
+		update_post_meta( $post_id, 'left_content',  $_POST[ 'left_content' ]  );
 	}
 	//Right column save and update
 	if ( isset( $_POST[ 'right_column_title' ] ) ) {
 		update_post_meta( $post_id, 'right_column_title', sanitize_text_field( $_POST[ 'right_column_title' ] ) );
 	}
 	if ( isset( $_POST[ 'right_content' ] ) ) {
-		update_post_meta( $post_id, 'right_content', sanitize_text_field( $_POST[ 'right_content' ] ) );
+		update_post_meta( $post_id, 'right_content',  $_POST[ 'right_content' ]  );
 	}
 }
 add_action( 'save_post', 'additional_meta_save' );
