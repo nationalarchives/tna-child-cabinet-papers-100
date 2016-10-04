@@ -54,8 +54,9 @@ get_header(); ?>
 						<div class="col-md-6">
 							<div class="cabinet-documents">
 								<div class="thumbnail">
+									<?php $image_url = wp_get_attachment_image_src( get_post_thumbnail_id( $post->ID ), 'full' ); ?>
 									<a href="<?php echo make_path_relative(get_page_link()); ?>" title="<?php echo get_the_title(); ?>">
-										<?php the_post_thumbnail( 'full', array('class' => 'img-responsive'));  ?>
+										<img src="<?php echo make_path_relative($image_url[0]); ?>" class="img-responsive" alt="<?php echo $post->post_title ?>">
 									</a>
 								</div>
 								<div class="caption">

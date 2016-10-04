@@ -13,8 +13,10 @@ get_template_part( 'breadcrumb' ); ?>
 				?>
 				<a href="<?php echo make_path_relative_no_pre_path($image[0]); ?>" target="_blank">
 					<div>
-						<?php if ( has_post_thumbnail() ) : ?>
-								<?php the_post_thumbnail( 'sub-page-image', array('class' => 'img-responsive')); ?>
+						<?php
+						$image_url = wp_get_attachment_image_src( get_post_thumbnail_id( $post->ID ), 'full' );
+						if ( has_post_thumbnail() ) : ?>
+							<img src="<?php echo make_path_relative($image_url[0]); ?>" class="img-responsive" alt="<?php echo $post->post_title ?>">
 						<?php endif; ?>
 					</div>
 				</a>
