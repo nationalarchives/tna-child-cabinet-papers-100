@@ -125,6 +125,9 @@ section.container {
 
 .end-box h2 {
   margin-bottom: .5em; }
+.end-box .img-box p img {
+  width: 100%;
+  height: auto; }
 
 .breather {
   padding: 0; }
@@ -162,7 +165,10 @@ footer {
     font-size: 2em; }
 
   .feature-img .img-caption-top {
-    top: -6em; } }
+    top: -6em; }
+
+  .cabinet-documents {
+    height: 310px; } }
 @media print {
   .caption {
     background-color: #fff !important;

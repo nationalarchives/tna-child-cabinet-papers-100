@@ -171,6 +171,14 @@ section.container {
   h2 {
     margin-bottom: .5em;
   }
+  .img-box {
+    p {
+      img {
+        width: 100%;
+        height: auto;
+      }
+    }
+  }
 }
 
 .breather {
@@ -241,6 +249,9 @@ and (orientation : portrait) {
   }
   .feature-img .img-caption-top {
     top: -6em;
+  }
+  .cabinet-documents {
+    height: 310px;
   }
 }
 
