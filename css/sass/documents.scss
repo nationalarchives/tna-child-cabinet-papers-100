@@ -43,6 +43,8 @@ section.explore-records {
   text-align: center;
   overflow: hidden;
   margin-bottom: 10px;
+  border-bottom: 1em solid #ddd;
+  max-height: 680px;
   a {
     div {
       padding: 1em;
@@ -72,6 +74,7 @@ section.explore-records {
   color: #ddd;
   border: 5px solid #000000;
   border: 5px solid rgba(0, 0, 0, -0.34);
+  margin-right: 1em;
   a:hover {
     color: black;
   }

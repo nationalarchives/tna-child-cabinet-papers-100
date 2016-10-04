@@ -55,7 +55,7 @@ get_header(); ?>
 							<div class="cabinet-documents">
 								<div class="thumbnail">
 									<a href="<?php echo make_path_relative(get_page_link()); ?>" title="<?php echo get_the_title(); ?>">
-										<?php the_post_thumbnail( 'custom-image', array('class' => 'img-responsive'));  ?>
+										<?php the_post_thumbnail( 'full', array('class' => 'img-responsive'));  ?>
 									</a>
 								</div>
 								<div class="caption">

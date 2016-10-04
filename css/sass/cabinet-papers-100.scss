@@ -1,3 +1,4 @@
+$tna-mid-dark-grey: #555;
 .feature-img .img-caption-top {
   top: -4em;
 }
@@ -92,6 +93,10 @@ h1.super-heading {
 
 .cabinet-documents {
   position: relative;
+  height: 430px;
+  overflow: hidden;
+  margin-bottom: 2em;
+  background-color: $tna-mid-dark-grey;
   .thumbnail {
     padding: 0;
     border: none;

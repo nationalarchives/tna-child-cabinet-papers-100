@@ -26,7 +26,9 @@ section.explore-records {
   position: relative;
   text-align: center;
   overflow: hidden;
-  margin-bottom: 10px; }
+  margin-bottom: 10px;
+  border-bottom: 1em solid #ddd;
+  max-height: 680px; }
   .document-viewer a div {
     padding: 1em;
     top: 0;
@@ -50,7 +52,8 @@ section.explore-records {
   background: rgba(0, 0, 0, 0.66);
   color: #ddd;
   border: 5px solid #000000;
-  border: 5px solid transparent; }
+  border: 5px solid transparent;
+  margin-right: 1em; }
   .overlay a:hover {
     color: black; }
 
