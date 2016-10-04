@@ -1,13 +1,16 @@
-h1 {
-  font-size: 3em;
-  line-height: 1em;
+.feature-img .img-caption-top {
+  top: -4em; }
+
+h1.super-heading {
   color: #fff;
-  margin-bottom: 1em; }
-  h1 span {
-    line-height: 1.5em;
-    background-color: #008484;
-    padding: 0 .4em;
-    box-sizing: border-box; }
+  background-color: #008484;
+  box-sizing: border-box;
+  display: table;
+  padding: 8px;
+  margin-top: 25px;
+  margin-bottom: 2em;
+  text-transform: none;
+  line-height: 1em; }
 
 .row div.col-md-6 div.thumbnail ul {
   margin-left: .5em; }
@@ -126,9 +129,6 @@ footer {
   margin-top: 1.5em; }
 
 @media screen and (max-width: 480px) {
-  /*.eye_caption {
-    top: -4.5em;
-  }*/
   .cabinet-documents .caption {
     margin-bottom: 0; }
 
@@ -138,9 +138,6 @@ footer {
   .alignright {
     margin: 0; } }
 @media screen and (min-device-width: 768px) and (max-device-width: 1024px) and (orientation: portrait) {
-  /*.eye_caption {
-    top: -1.5em;
-  }*/
   .cabinet-documents .thumbnail a img {
     width: 100%; }
 
@@ -153,6 +150,15 @@ footer {
     max-width: none !important; }
     .alignright img {
       width: 100%; } }
+@media (min-width: 650px) {
+  .super-heading {
+    font-size: 3.3em; } }
+@media (max-width: 650px) {
+  .super-heading {
+    font-size: 2em; }
+
+  .feature-img .img-caption-top {
+    top: -6em; } }
 @media print {
   .caption {
     background-color: #fff !important;
