@@ -86,19 +86,19 @@ get_header(); ?>
 			<section class="container">
 				<div class="row">
 					<div class="<?php if ( empty($right_title) || empty($right_content ) ) { echo 'col-md-12'; } else { echo 'col-md-6'; } ?>">
-						<div class="thumbnail">
+						<div class="thumbnail end-box">
 							<h2><?php echo $left_title; ?></h2>
 							<div class="img-box">
-								<?php echo $left_content; ?>
+								<?php echo wpautop($left_content); ?>
 							</div>
 						</div>
 					</div>
 					<?php if( !empty($right_content) || !empty($right_content) ) : ?>
 					<div class="col-md-6">
-						<div class="thumbnail">
+						<div class="thumbnail end-box">
 							<h2><?php echo $right_title; ?></h2>
 							<div class="img-box">
-								<?php echo $right_content; ?>
+								<?php echo wpautop($right_content); ?>
 							</div>
 						</div>
 					</div>

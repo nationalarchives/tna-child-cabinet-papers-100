@@ -122,9 +122,9 @@ section.container {
         margin-bottom: 2em; }
         section.container .row .col-md-6 div.thumbnail .img-box .col-md-4 a {
           display: block; }
-    section.container .row .col-md-6 div.thumbnail p {
-      padding-left: 15px;
-      padding-top: 15px; }
+
+.end-box h2 {
+  margin-bottom: .5em; }
 
 .breather {
   padding: 0; }

@@ -150,24 +150,26 @@ section.container {
   padding: 2em;
   .row {
     .col-md-6 {
-        div.thumbnail {
-          border: none;
-          border-radius: 0;
-          .img-box {
+      div.thumbnail {
+        border: none;
+        border-radius: 0;
+        .img-box {
+          margin-bottom: 2em;
+          .col-md-4 {
             margin-bottom: 2em;
-            .col-md-4 {
-              margin-bottom: 2em;
-              a {
-                display: block;
-              }
+            a {
+              display: block;
             }
           }
-          p {
-            padding-left: 15px;
-            padding-top: 15px;
-          }
         }
+      }
     }
+  }
+}
+
+.end-box {
+  h2 {
+    margin-bottom: .5em;
   }
 }
 
