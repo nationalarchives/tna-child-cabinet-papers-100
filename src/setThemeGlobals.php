@@ -17,11 +17,11 @@ function setThemeGlobals($environment = null) {
         case 'internal':
         case 'development':
             $pre_path = '';
-            $pre_crumbs = array('Cabinet office 100' => '/');
+            $pre_crumbs = array('Cabinet Office 100' => '/');
             break;
         case 'external':
             $pre_crumbs = array(
-                'Cabinet office 100' => '/cabinet-office-100/'
+                'Cabinet Office 100' => '/cabinet-office-100/'
             );
             $pre_path = '/cabinet-office-100';
             break;
