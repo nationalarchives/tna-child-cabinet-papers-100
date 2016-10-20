@@ -100,6 +100,9 @@ section.explore-records {
   border: none;
   box-shadow: none; }
 
+section.container:last-of-type {
+  margin-bottom: 2em; }
+
 @media screen and (min-width: 769px) {
   .bx-controls {
     display: none; }
@@ -127,6 +130,9 @@ section.explore-records {
   .feature-img .img-caption-top {
     top: 0; } }
 @media screen and (max-device-width: 420px) {
+  #slider-prev, #slider-next {
+    display: none; } }
+@media screen and (max-width: 768px) {
   #slider-prev, #slider-next {
     display: none; } }
 @media print {
