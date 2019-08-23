@@ -16,7 +16,7 @@ get_template_part( 'breadcrumb' ); ?>
                         <?php
 						$image_url = wp_get_attachment_image_src( get_post_thumbnail_id( $post->ID ), 'full' );
 						if ( has_post_thumbnail() ) : ?>
-                        <img src="<?php echo make_path_relative($image_url[0]); ?>" class="img-responsive"
+                        <img src="<?php echo make_path_relative_no_pre_path($image_url[0]); ?>" class="img-responsive"
                             alt="<?php echo $post->post_title ?>">
                         <?php endif; ?>
                     </div>
@@ -81,11 +81,11 @@ get_template_part( 'breadcrumb' ); ?>
 				$parent = $post->post_parent;
 				$home_title = get_the_title( get_option('page_on_front') );
 				if (is_page() && $parent) : ?>
-                <a class="button align-right" href="<?php echo make_path_relative(get_permalink( $parent )); ?>">
+                <a class="button pull-right" href="<?php echo make_path_relative(get_permalink( $parent )); ?>">
                     <?php echo 'Return to '.get_the_title($parent); ?>
                 </a>
                 <?php else : ?>
-                <a class="button align-right" href="<?php echo make_path_relative(get_site_url()); ?>">
+                <a class="button pull-right" href="<?php echo make_path_relative(get_site_url()); ?>">
                     <?php echo 'Return to '.$home_title; ?>
                 </a>
                 <?php endif; ?>
