@@ -12,12 +12,14 @@ $tna-mid-dark-grey: #555;
         padding: 7px 22px;
         background-color: #fff;
         display: inline-block;
+        border: 2px solid #26262a;
     }
 }
 
 .content-wrapper {
     background: #fff;
     padding-bottom: .5em;
+    border: 2px solid #26262a;
 }
 
 .row {
@@ -67,7 +69,7 @@ $tna-mid-dark-grey: #555;
 }
 
 .container {
-    margin-top: 1.5em;
+    // margin-top: 1.5em;
 }
 
 .parent-content {
@@ -176,6 +178,10 @@ section.container {
     }
 }
 
+section.padding-fix {
+    padding: 1em;
+}
+
 .end-box {
     h2 {
         margin-bottom: .5em;
@@ -194,10 +200,13 @@ section.container {
     padding: 0;
 }
 
-footer {
-    margin-top: 1.5em;
+section:last-child {
+    padding-top: 0;
 }
 
+// footer {
+//     margin-top: 1.5em;
+// }
 @media screen and (max-width: 480px) {
     .cabinet-documents .caption {
         margin-bottom: 0;

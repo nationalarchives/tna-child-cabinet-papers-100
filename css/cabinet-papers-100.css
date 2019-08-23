@@ -7,11 +7,13 @@
   .entry-header h1.super-heading {
     padding: 7px 22px;
     background-color: #fff;
-    display: inline-block; }
+    display: inline-block;
+    border: 2px solid #26262a; }
 
 .content-wrapper {
   background: #fff;
-  padding-bottom: .5em; }
+  padding-bottom: .5em;
+  border: 2px solid #26262a; }
 
 .row div.col-md-6 div.thumbnail ul {
   margin-left: .5em; }
@@ -40,9 +42,6 @@
 
 .container:first-of-type {
   margin-top: 0; }
-
-.container {
-  margin-top: 1.5em; }
 
 .parent-content {
   padding: 20px !important;
@@ -124,6 +123,9 @@ section.container {
         section.container .row .col-md-6 div.thumbnail .img-box .col-md-4 a {
           display: block; }
 
+section.padding-fix {
+  padding: 1em; }
+
 .end-box h2 {
   margin-bottom: .5em; }
 .end-box .img-box p img {
@@ -133,8 +135,8 @@ section.container {
 .breather {
   padding: 0; }
 
-footer {
-  margin-top: 1.5em; }
+section:last-child {
+  padding-top: 0; }
 
 @media screen and (max-width: 480px) {
   .cabinet-documents .caption {

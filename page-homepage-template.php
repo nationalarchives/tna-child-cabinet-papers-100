@@ -39,7 +39,7 @@ get_header(); ?>
         </section>
         <?php endif; ?>
 
-        <section class="container">
+        <section class="container padding-fix">
             <div class="row">
                 <?php
 					$parent_id = get_the_ID();
