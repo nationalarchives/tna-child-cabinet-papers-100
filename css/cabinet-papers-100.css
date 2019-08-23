@@ -1,16 +1,19 @@
-.feature-img .img-caption-top {
+.feature-img-bg .img-caption-top {
   top: -4em; }
 
-h1.super-heading {
-  color: #fff;
-  background-color: #008484;
-  box-sizing: border-box;
-  display: table;
-  padding: 8px;
-  margin-top: 25px;
-  margin-bottom: 2em;
-  text-transform: none;
-  line-height: 1em; }
+.entry-header {
+  margin: 34px 0 16px 0;
+  margin-left: -15px; }
+  .entry-header h1.super-heading {
+    padding: 7px 22px;
+    background-color: #fff;
+    display: inline-block;
+    border: 2px solid #26262a; }
+
+.content-wrapper {
+  background: #fff;
+  padding-bottom: .5em;
+  border: 2px solid #26262a; }
 
 .row div.col-md-6 div.thumbnail ul {
   margin-left: .5em; }
@@ -34,14 +37,11 @@ h1.super-heading {
         color: #fff; }
 
 .banner {
-  background: no-repeat top center;
-  background-size: 1900px auto; }
+  background-color: #f0f0f0 !important;
+  background: no-repeat top center; }
 
 .container:first-of-type {
   margin-top: 0; }
-
-.container {
-  margin-top: 1.5em; }
 
 .parent-content {
   padding: 20px !important;
@@ -57,7 +57,7 @@ h1.super-heading {
 
 .alignright {
   float: right;
-  margin: 0 1em 1em 2em; }
+  margin-top: 1em; }
 
 .wp-caption-text {
   display: block;
@@ -123,6 +123,9 @@ section.container {
         section.container .row .col-md-6 div.thumbnail .img-box .col-md-4 a {
           display: block; }
 
+section.padding-fix {
+  padding: 1em; }
+
 .end-box h2 {
   margin-bottom: .5em; }
 .end-box .img-box p img {
@@ -132,8 +135,8 @@ section.container {
 .breather {
   padding: 0; }
 
-footer {
-  margin-top: 1.5em; }
+section:last-child {
+  padding-top: 0; }
 
 @media screen and (max-width: 480px) {
   .cabinet-documents .caption {

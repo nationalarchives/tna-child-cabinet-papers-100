@@ -1,0 +1,35 @@
+{
+  "name": "tna-child-cabinet-papers-100",
+  "version": "1.0.0",
+  "description": "Front-end setup for Cabinet Papers 100 wp-child-site ",
+  "main": "Gruntfile.js",
+  "directories": {
+    "test": "tests"
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/nationalarchives/tna-child-cabinet-papers-100.git"
+  },
+  "keywords": [
+    "cabinet-papers-100",
+    "tna-child-site",
+    "wordpress",
+    "theme"
+  ],
+  "author": "Punal Chotrani",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/nationalarchives/tna-child-cabinet-papers-100/issues"
+  },
+  "homepage": "https://github.com/nationalarchives/tna-child-cabinet-papers-100#readme",
+  "devDependencies": {
+    "grunt": "^1.0.4",
+    "grunt-contrib-concat": "^1.0.1",
+    "grunt-contrib-cssmin": "^3.0.0",
+    "grunt-contrib-sass": "^1.0.0",
+    "grunt-contrib-watch": "^1.1.0"
+  }
+}
