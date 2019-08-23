@@ -68,10 +68,6 @@ $tna-mid-dark-grey: #555;
     margin-top: 0;
 }
 
-.container {
-    // margin-top: 1.5em;
-}
-
 .parent-content {
     padding: 20px !important;
     background-color: #fff;
@@ -88,7 +84,6 @@ $tna-mid-dark-grey: #555;
 
 .alignright {
     float: right;
-    //margin: 0 1em 1em 2em;
     margin-top: 1em;
 }
 
@@ -204,9 +199,6 @@ section:last-child {
     padding-top: 0;
 }
 
-// footer {
-//     margin-top: 1.5em;
-// }
 @media screen and (max-width: 480px) {
     .cabinet-documents .caption {
         margin-bottom: 0;
