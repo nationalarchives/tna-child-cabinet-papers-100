@@ -52,7 +52,7 @@ section.explore-records {
   background: rgba(0, 0, 0, 0.66);
   color: #ddd;
   border: 5px solid #000000;
-  border: 5px solid transparent;
+  border: 5px solid rgba(0, 0, 0, 0);
   margin-right: 1em; }
   .overlay a:hover {
     color: black; }
