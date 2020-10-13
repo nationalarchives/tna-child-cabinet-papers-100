@@ -20,6 +20,7 @@ function setThemeGlobals($environment = null) {
             $pre_crumbs = array('Cabinet Office 100' => '/');
             break;
         case 'external':
+        case 'aws_public':
             $pre_crumbs = array(
                 'Cabinet Office 100' => '/cabinet-office-100/'
             );
