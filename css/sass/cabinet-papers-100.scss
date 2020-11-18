@@ -132,7 +132,10 @@ $tna-mid-dark-grey: #555;
         padding: 1em;
         width: 100%;
         a:hover {
-            color: #0084b4;
+            color: #ffffff;
+            h2 {
+                color: #ffffff;
+            }
         }
         a {
             display: block;

@@ -15,9 +15,13 @@ section.container {
                 display: block;
             }
             div.overlay {
-                .align-right:focus {
-                    color: #fff !important;
-                    display: block;
+                .align-right {
+                    border: 5px solid #26262a;
+                    &:focus {
+                        border: 5px solid #1d70b8;
+                        background-color: #26262a;
+                        text-decoration: underline;
+                    }
                 }
             }
         }
@@ -25,7 +29,7 @@ section.container {
 }
 
 a.button.align-right:focus {
-    color: #fff!important;
+    color: #ffffff;
 }
 
 section.explore-records {
@@ -59,6 +63,14 @@ section.explore-records {
             }
         }
     }
+    >a:hover {
+        background: none;
+    }
+    .image_caption_back {
+        a {
+            display: inline-block !important;
+        }
+    }
 }
 
 .overlay {
@@ -74,6 +86,10 @@ section.explore-records {
     margin-right: 1em;
     a:hover {
         color: black;
+    }
+    a.align-right:hover {
+        background-color: #ffffff !important;
+        color:#26262a;
     }
 }
 
@@ -109,7 +125,7 @@ section.explore-records {
 }
 
 .document-slide-thumb:hover {
-    border: 2px solid $primary-blue;
+    border: none;
 }
 
 .bx-wrapper {
