@@ -133,11 +133,6 @@
   margin-top: 5px;
   color: #0084b4;
 }
-.cabinet-documents .caption a:focus {
-  background-color: #FCE45C;
-  color: #000;
-  outline: #ebab00 solid 3px;
-}
 .cabinet-documents .caption p {
   margin-bottom: 0.5em;
 }
