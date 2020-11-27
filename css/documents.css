@@ -208,4 +208,9 @@ section.container:last-of-type {
   width: 24em;
 }
 
+.bx-wrapper .bx-viewport .bxslider a:focus {
+  outline: 3px solid #1d70b8;
+  outline-offset: -3px;
+}
+
 /*# sourceMappingURL=documents.css.map */

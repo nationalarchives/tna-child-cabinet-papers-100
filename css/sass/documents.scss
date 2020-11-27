@@ -226,3 +226,14 @@ section.container:last-of-type {
 .no-js .document-slide-thumb {
     width: 24em;
 }
+
+.bx-wrapper {
+    .bx-viewport {
+        .bxslider {
+            a:focus {
+                outline: 3px solid #1d70b8;
+                outline-offset: -3px;
+            }
+        }
+    }
+}
