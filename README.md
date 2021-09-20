@@ -25,10 +25,6 @@ Click 'Remote' in SourceTree and you will be shown a full list of repositories y
 * Click on 'Git Flow' to create the desired branches to begin development
 * Push both branches 'master' and 'develop' to the remote repository
 
-#### 1.2.1 Adding new repository to Travis CI
-
-Log into your Travis CI account and navigate to The National Archives organisation. Here you will be able to add the repository to Travis CI. 
-
 ### 1.3 Create a new project for the WordPress installation in PhpStorm
 
 * Select 'Create New Project from Existing Files'
@@ -40,8 +36,6 @@ Log into your Travis CI account and navigate to The National Archives organisati
   * Set Project URL as: http://tna-base:8888
 
 ### 1.4 Installing dependencies
-
-This repository is configured to allow for easy integration with Travis CI (Continuous Integration).
 
 #### 1.4.1 Obtaining dependencies via Composer
 
